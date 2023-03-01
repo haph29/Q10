@@ -1,0 +1,1896 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    body {
+      font-family: "Montserrat", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 26px;
+      overflow-wrap: break-word;
+      word-break: normal;
+      transition: 0.5s;
+    }
+
+    h1,
+    h2,
+    h3,
+    p,
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    li.nav-item {
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      color: rgb(255, 255, 255) !important;
+      font-size: 16px;
+      font-weight: bold !important;
+      line-height: 1.6;
+      text-transform: uppercase;
+    }
+
+    nav ul li a.active {
+      color: rgb(255, 253, 1) !important;
+    }
+
+    .list-paragraph ul li {
+      list-style: none;
+      position: relative;
+      font-weight: bold;
+    }
+
+    .bg-light {
+      background-color: rgb(68 173 242) !important;
+    }
+
+    .banner {
+      border-radius: 4px;
+      box-shadow: 0px 0px 30px -15px rgb(7 28 58);
+    }
+
+    .section-background {
+      background-size: cover;
+      background-attachment: scroll;
+      background-origin: content-box;
+      background-image: url(https://w.ladicdn.com/5c7362c6c417ab07e5196b05/fdsgersg-20210112024759.gif);
+      background-position: center top;
+      background-repeat: repeat;
+      padding-top: 58px;
+    }
+
+    .section02 {
+
+      background-size: cover;
+      background-attachment: scroll;
+      background-origin: content-box;
+      background-image: url(https://w.ladicdn.com/s1440x659/5c7362c6c417ab07e5196b05/jjj-20210113024237.jpg);
+      background-position: center top;
+      background-repeat: repeat;
+    }
+
+    .section03 {
+      /* background-color: rgb(228, 228, 228)       */
+
+      background-size: cover;
+      background-attachment: scroll;
+      background-origin: content-box;
+      background-image: url(https://w.ladicdn.com/s1440x659/5c7362c6c417ab07e5196b05/jjj-20210113024237.jpg);
+      background-position: center top;
+      background-repeat: no-repeat;
+    }
+
+    .section04 {
+      background-size: cover;
+      background-attachment: scroll;
+      background-origin: content-box;
+      background-image: url(https://w.ladicdn.com/s1440x659/5c7362c6c417ab07e5196b05/jjj-20210113024237.jpg);
+      background-position: center top;
+      background-repeat: repeat;
+    }
+
+    .feauture {
+      padding: 40px 0;
+    }
+
+    .register {
+      background: linear-gradient(180deg, rgb(68 173 242), rgb(105 197 246));
+      border-radius: 5px;
+      padding: 15px 20px;
+      position: relative;
+    }
+
+    h1 {
+      font-size: 48px;
+      background: -webkit-linear-gradient(180deg,
+          rgba(247, 175, 5, 1),
+          rgba(207, 10, 2, 1));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: bold;
+    }
+
+    h2.banner-h2 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-left: 40px;
+      margin-bottom: 30px;
+    }
+
+    h3 {
+      font-weight: bold;
+    }
+
+    .form-heading {
+      background: linear-gradient(180deg, #ffe259, #ffa751);
+      -webkit-box-shadow: 0px 0px 30px -15px rgb(7 28 58);
+      border-radius: 5px;
+      text-align: center;
+      padding: 10px;
+      margin-bottom: 30px;
+      font-weight: bold;
+      margin-top: -45px;
+    }
+
+    .form-item input {
+      padding: 12px 14px;
+      margin-bottom: 10px;
+    }
+
+    .form-item input::placeholder {
+      color: #000;
+      font-size: 14px;
+    }
+
+    .form-button {
+      background: linear-gradient(180deg, #ffe259, #ffa751);
+      -webkit-box-shadow: 0px 0px 30px -15px rgb(7 28 58);
+      border-radius: 5px;
+      text-align: center;
+      padding: 10px;
+      font-weight: 600;
+      width: 100%;
+    }
+
+    .register-form {
+      padding: 0 30px;
+    }
+
+    .effect-icon {
+      width: 65px;
+      height: 28.5px;
+    }
+
+    .effect-content h3 {
+      color: rgb(145, 23, 16);
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 1.6;
+    }
+
+    .effect-content h2 {
+      color: #44adf2;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 1.6;
+    }
+
+    .effect {
+      border-radius: 4px;
+      box-shadow: 0px 0px 30px -10px rgb(0 0 0 / 20%);
+      -webkit-box-shadow: 0px 0px 30px -10px rgb(0 0 0 / 20%);
+      background-color: rgb(255, 255, 255);
+    }
+
+    .heading-section {
+      color: #44adf2;
+      font-size: 33px;
+      font-weight: bold;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .heading-effect {
+      color: rgb(0, 0, 0);
+      font-size: 21px;
+      font-weight: bold;
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    .perfect-img {
+      text-align: center;
+
+    }
+
+    .perfect-img img {
+      padding: 10px;
+      background: linear-gradient(180deg, rgba(255, 236, 141, 1.0), rgba(255, 249, 221, 1.0));
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      -webkit-box-shadow: 0px 0px 30px -10px rgb(0 0 0 / 20%);
+    }
+
+    .perfect-content h4 {
+      color: rgb(255, 85, 63);
+      font-size: 20px;
+      font-weight: bold;
+      text-align: left;
+      line-height: 1.2;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    .genuine {
+      background-color: rgb(16, 145, 33);
+      border-radius: 1000px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #fff;
+      padding: 8px 20px;
+      position: relative;
+    }
+
+    .uudai {
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 15px;
+    }
+
+    .register-bottom {
+      border-radius: 4px;
+      padding: 50px 30px;
+      background-color: rgb(16, 72, 145);
+    }
+
+    .register-bottom .form-heading {
+      margin-top: 0;
+      font-size: 18px;
+    }
+
+    .uudai span {
+      border-left: 2px solid #8d949e;
+      padding-left: 5px;
+      font-size: 14px;
+      color: #8d949e;
+    }
+
+    .uses {
+      text-decoration-line: underline;
+      -webkit-text-decoration-line: underline;
+      color: rgb(230, 74, 74);
+    }
+
+    .form-text {
+      color: #fff;
+      margin-bottom: 20px;
+    }
+
+    .form-number {
+      background-color: rgb(199, 75, 22);
+      font-size: 30px;
+      font-weight: 600;
+      color: #fff;
+      padding: 10px;
+      border-radius: 4px;
+    }
+
+    .effect-img-right {
+      padding-left: 0;
+    }
+
+    .effect-img-left {
+      padding-right: 0;
+    }
+
+    .effect-center {
+      padding: 0 30px;
+    }
+
+    .heading-comment {
+      font-family: "Montserrat", sans-serif;
+      color: rgb(91, 91, 91);
+      font-size: 25px;
+      font-weight: bold;
+      text-align: left;
+      line-height: 1.2;
+      margin-bottom: 30px;
+    }
+
+    .number-comment {
+      font-family: "Montserrat", sans-serif;
+      color: rgb(84, 84, 84);
+      font-size: 18px;
+      font-weight: bold;
+      text-align: left;
+      line-height: 1.2;
+      padding: 8px 0;
+      border-bottom: 1px solid rgb(84, 84, 84);
+    }
+
+    .people-comment-img {
+      width: 65px;
+    }
+
+    .people-comment-img img {
+      border-radius: 4px;
+    }
+
+    .people-comment-content .name {
+      color: rgb(75, 75, 75);
+      font-size: 15px;
+      font-weight: bold;
+      text-align: left;
+      line-height: 1.2;
+    }
+
+    .people-comment-content .content {
+      color: rgb(0, 0, 0);
+      font-size: 14px;
+      text-align: justify;
+      line-height: 1.4;
+    }
+
+    .star i {
+      font-size: 14px;
+      color: rgb(255, 188, 1);
+    }
+
+    .like {
+      font-family: "Montserrat", sans-serif;
+      color: rgb(67, 102, 176);
+      font-size: 12px;
+      text-align: left;
+      line-height: 1.2;
+      display: flex;
+      align-items: center;
+    }
+
+    .like img {
+      width: 24px;
+      margin-top: -2px;
+    }
+
+    .chungnhan-img img {
+      margin-top: 30px;
+      height: 340px;
+      border-radius: 4px;
+      border: 1px solid #44adf2;
+      -webkit-box-shadow: 0px 0px 30px -10px rgb(0 0 0 / 20%);
+    }
+
+    .danhgia {
+      background-color: rgb(255, 255, 255);
+      border-style: solid;
+      border-color: rgb(228, 228, 228);
+      border-width: 1px;
+      border-radius: 0px;
+      padding: 20px;
+      margin-top: 30px;
+      filter: drop-shadow(rgb(166, 166, 166) 0px 6px 6px);
+    }
+
+    .danhgia-img {
+      width: 80px;
+      border-radius: 50%;
+    }
+
+    .danhgia-form {
+      padding-left: 20px;
+      width: calc(100% - 80px);
+    }
+
+    .danhgia-form textarea,
+    .danhgia-form input {
+      border-radius: 1px;
+      margin-bottom: 10px;
+    }
+
+    .danhgia-star {
+      color: #8d949e;
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      padding: 5px;
+    }
+
+    .status-click {
+      font-size: 14px;
+      text-decoration: none;
+      color: #000;
+      font-weight: 600;
+      padding: 10px 40px;
+      border-radius: 4px;
+      background-color: rgb(255, 188, 1);
+    }
+
+    .danhgia-star i {
+      margin: 4px;
+    }
+
+    footer {
+      color: #fff;
+      background: linear-gradient(180deg, rgb(1 93 194), rgb(137 248 255));
+    }
+
+    footer h2 {
+      color: rgb(255, 253, 1);
+      font-size: 20px;
+      font-weight: bold;
+      text-align: left;
+      line-height: 1.4;
+    }
+
+    .thanhphan-item h3 {
+      color: #44adf2;
+      font-size: 22px;
+      font-weight: bold;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    .thanhphan-item ul li {
+      list-style-type: "\1F44D";
+      padding-left: 5px;
+      margin-bottom: 10px;
+    }
+
+    .thanhphan-left {
+      padding-left: 50px;
+    }
+
+    .cachdung {
+      background-color: #44adf2;
+      border-radius: 4px;
+      padding: 15px;
+      box-shadow: 0px 0px 30px -10px rgb(0 0 0 / 20%);
+      -webkit-box-shadow: 0px 0px 30px -10px rgb(0 0 0 / 20%);
+      color: #fff;
+    }
+
+    .cachdung-border {
+      border: 1px solid #fff;
+      border-radius: 4px;
+      padding: 15px 40px;
+    }
+
+    .cachdung-item ul li {
+      list-style: none;
+    }
+
+    .cachdung-item h3 {
+      font-size: 22px;
+      font-weight: bold;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    .cachdung-item-right {
+      border-left: 1px solid #fff;
+      padding-left: 20px;
+    }
+
+    /* three dots */
+    .dot-elastic {
+      position: relative;
+      width: 5px;
+      height: 5px;
+      border-radius: 5px;
+      background-color: #8d949e;
+      color: #8d949e;
+      animation: dot-elastic 1s infinite linear;
+    }
+
+    .dot-elastic::before,
+    .dot-elastic::after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      top: 0;
+    }
+
+    .dot-elastic::before {
+      left: -10px;
+      width: 5px;
+      height: 5px;
+      border-radius: 5px;
+      background-color: #8d949e;
+      color: #8d949e;
+      animation: dot-elastic-before 1s infinite linear;
+    }
+
+    .dot-elastic::after {
+      left: 10px;
+      width: 5px;
+      height: 5px;
+      border-radius: 5px;
+      background-color: #8d949e;
+      color: #8d949e;
+      animation: dot-elastic-after 1s infinite linear;
+    }
+
+    @keyframes dot-elastic-before {
+      0% {
+        transform: scale(1, 1);
+      }
+
+      25% {
+        transform: scale(1, 1.5);
+      }
+
+      50% {
+        transform: scale(1, 0.67);
+      }
+
+      75% {
+        transform: scale(1, 1);
+      }
+
+      100% {
+        transform: scale(1, 1);
+      }
+    }
+
+    @keyframes dot-elastic {
+      0% {
+        transform: scale(1, 1);
+      }
+
+      25% {
+        transform: scale(1, 1);
+      }
+
+      50% {
+        transform: scale(1, 1.5);
+      }
+
+      75% {
+        transform: scale(1, 1);
+      }
+
+      100% {
+        transform: scale(1, 1);
+      }
+    }
+
+    @keyframes dot-elastic-after {
+      0% {
+        transform: scale(1, 1);
+      }
+
+      25% {
+        transform: scale(1, 1);
+      }
+
+      50% {
+        transform: scale(1, 0.67);
+      }
+
+      75% {
+        transform: scale(1, 1.5);
+      }
+
+      100% {
+        transform: scale(1, 1);
+      }
+    }
+
+    .zoom-in-out-box {
+      padding: 6px 30px;
+      border-radius: 99px;
+      color: #fff;
+      background: rgb(230, 74, 74);
+      font-weight: bold;
+      text-decoration: none;
+      animation: zoom-in-zoom-out 1.15s ease infinite;
+    }
+
+    .background-order {
+      background-color: #44adf2;
+      padding: 8px 40px;
+    }
+
+    @keyframes zoom-in-zoom-out {
+      0% {
+        transform: scale(1, 1);
+      }
+
+      50% {
+        transform: scale(1.15, 1.15);
+      }
+
+      100% {
+        transform: scale(1, 1);
+      }
+    }
+
+    .like-pot {
+      width: 100px;
+      position: relative;
+      margin-left: 20px;
+      margin-top: 5px;
+    }
+
+    #pot {
+      position: absolute;
+      top: 0;
+      -webkit-animation: linear infinite;
+      -webkit-animation-name: run;
+      -webkit-animation-duration: 0.3s;
+    }
+    .order-height {
+      height: 100px;
+      margin: 20px 0;
+    }
+    .order-now {
+      position: absolute;
+      top: 0;
+      -webkit-animation: linear infinite;
+      -webkit-animation-name: order-now;
+      -webkit-animation-duration: 0.5s;
+    }
+    @-webkit-keyframes run {
+      0% {
+        left: 0;
+      }
+
+      50% {
+        left: 15%;
+      }
+
+      100% {
+        left: 0;
+      }
+    }
+    @-webkit-keyframes order-now {
+      0% {
+        top: 0;
+      }
+
+      50% {
+        top: 15%;
+      }
+
+      100% {
+        top: 0;
+      }
+    }
+    @media (min-width: 1400px) {
+      .container {
+        max-width: 1140px;
+      }
+    }
+
+    /*  */
+    /* write your CSS code here 90949ca6 */
+    /*them nut call*/
+    :root {
+      --phone-text-color: #fff;
+      /* màu chữ */
+      --phone-icon-color: coral;
+      --phone-bg-color: #44adf2;
+      /* màu nền nút gọi */
+      --phone-text-bg-color: rgb(230, 74, 74);
+      /* màu nền text */
+      --phone-border-color: ;
+      /* màu vòng tròn */
+      --phone-hover-color: #f86e00;
+      /* màu vòng tròn re chuột */
+      --phone-hover2-color: red;
+      /* màu vòng tròn re chuột */
+    }
+
+    .fone {
+      font-size: 19px;
+      /* chữ cạnh nút gọi */
+      color: var(--phone-text-color);
+      line-height: 40px;
+      font-weight: bold;
+      padding-left: 48px;
+      /* cách bên trái cho chữ */
+      margin: 0 0;
+    }
+
+    .fix_tel {
+      position: fixed;
+      bottom: 50px;
+      left: 30px;
+      z-index: 999;
+    }
+
+    .fix_zalo {
+      position: fixed;
+      bottom: 70px;
+      right: 30px;
+      z-index: 999;
+    }
+
+    /* left 18px là cách bên trái 18px. nếu muốn cho nút gọi sang phải thay là right */
+    .fix_tel a {
+      text-decoration: none;
+      display: block;
+    }
+
+    .tel {
+      background: var(--phone-text-bg-color);
+      width: 205px;
+      height: 40px;
+      position: relative;
+      overflow: hidden;
+      background-size: 40px;
+      border-radius: 28px;
+      border: none
+    }
+
+    .ring-alo-phone {
+      background-color: transparent;
+      cursor: pointer;
+      height: 80px;
+      position: absolute;
+      transition: visibility 0.5s ease 0s;
+      visibility: hidden;
+      width: 80px;
+      z-index: 200000 !important;
+    }
+
+    .ring-alo-phone.ring-alo-show {
+      visibility: visible;
+    }
+
+    .ring-alo-phone.ring-alo-hover,
+    .ring-alo-phone:hover {
+      opacity: 1;
+    }
+
+    .ring-alo-ph-circle {
+      animation: 1.2s ease-in-out 0s normal none infinite running ring-alo-circle-anim;
+      background-color: transparent;
+      border: 2px solid rgba(30, 30, 30, 0.4);
+      border-radius: 100%;
+      height: 70px;
+      left: 10px;
+      opacity: 0.1;
+      position: absolute;
+      top: 12px;
+      transform-origin: 50% 50% 0;
+      transition: all 0.5s ease 0s;
+      width: 70px;
+    }
+
+    .ring-alo-phone.ring-alo-active .ring-alo-ph-circle {
+      animation: 1.1s ease-in-out 0s normal none infinite running ring-alo-circle-anim !important;
+    }
+
+    .ring-alo-phone.ring-alo-static .ring-alo-ph-circle {
+      animation: 2.2s ease-in-out 0s normal none infinite running ring-alo-circle-anim !important;
+    }
+
+    .ring-alo-phone.ring-alo-hover .ring-alo-ph-circle,
+    .ring-alo-phone:hover .ring-alo-ph-circle {
+      border-color: var(--phone-border-color);
+      opacity: 0.5;
+    }
+
+    .ring-alo-phone.ring-alo-green.ring-alo-hover .ring-alo-ph-circle,
+    .ring-alo-phone.ring-alo-green:hover .ring-alo-ph-circle {
+      border-color: var(--phone-hover2-color);
+      opacity: 0.5;
+    }
+
+    .ring-alo-phone.ring-alo-green .ring-alo-ph-circle {
+      border-color: var(--phone-border-color);
+      opacity: 0.5;
+    }
+
+    .ring-alo-ph-circle-fill {
+      animation: 2.3s ease-in-out 0s normal none infinite running ring-alo-circle-fill-anim;
+      background-color: #000;
+      border: 2px solid transparent;
+      border-radius: 100%;
+      height: 30px;
+      left: 30px;
+      opacity: 0.1;
+      position: absolute;
+      top: 33px;
+      transform-origin: 50% 50% 0;
+      transition: all 0.5s ease 0s;
+      width: 30px;
+    }
+
+    .ring-alo-phone.ring-alo-hover .ring-alo-ph-circle-fill,
+    .ring-alo-phone:hover .ring-alo-ph-circle-fill {
+      background-color: var(--phone-hover-color);
+      opacity: 0.75 !important;
+    }
+
+    .ring-alo-phone.ring-alo-green.ring-alo-hover .ring-alo-ph-circle-fill,
+    .ring-alo-phone.ring-alo-green:hover .ring-alo-ph-circle-fill {
+      background-color: var(--phone-hover-color);
+      opacity: 0.75 !important;
+    }
+
+    .ring-alo-phone.ring-alo-green .ring-alo-ph-circle-fill {
+      background-color: var(--phone-hover-color);
+      opacity: 0.75 !important;
+    }
+
+    .ring-alo-ph-img-circle {
+      animation: 1s ease-in-out 0s normal none infinite running ring-alo-circle-img-anim;
+      border: 2px solid transparent;
+      border-radius: 100%;
+      height: 30px;
+      left: 30px;
+      opacity: 1;
+      position: absolute;
+      top: 33px;
+      transform-origin: 50% 50% 0;
+      width: 30px;
+    }
+
+    .ring-alo-phone.ring-alo-hover .ring-alo-ph-img-circle,
+    .ring-alo-phone:hover .ring-alo-ph-img-circle {
+      background-color: var(--phone-text-bg-color);
+    }
+
+    .ring-alo-phone.ring-alo-green.ring-alo-hover .ring-alo-ph-img-circle,
+    .ring-alo-phone.ring-alo-green:hover .ring-alo-ph-img-circle {
+      background-color: var(--phone-hover2-color);
+    }
+
+    .ring-alo-phone.ring-alo-green .ring-alo-ph-img-circle {
+      background-color: var(--phone-bg-color);
+    }
+
+    .fix_zalo .lazy {
+      width: 50px;
+    }
+
+    @keyframes ring-alo-circle-anim {
+      0% {
+        opacity: 0.1;
+        transform: rotate(0deg) scale(0.5) skew(1deg);
+      }
+
+      30% {
+        opacity: 0.5;
+        transform: rotate(0deg) scale(0.7) skew(1deg);
+      }
+
+      100% {
+        opacity: 0.6;
+        transform: rotate(0deg) scale(1) skew(1deg);
+      }
+    }
+
+    @keyframes ring-alo-circle-img-anim {
+      0% {
+        transform: rotate(0deg) scale(1) skew(1deg);
+      }
+
+      10% {
+        transform: rotate(-25deg) scale(1) skew(1deg);
+      }
+
+      20% {
+        transform: rotate(25deg) scale(1) skew(1deg);
+      }
+
+      30% {
+        transform: rotate(-25deg) scale(1) skew(1deg);
+      }
+
+      40% {
+        transform: rotate(25deg) scale(1) skew(1deg);
+      }
+
+      50% {
+        transform: rotate(0deg) scale(1) skew(1deg);
+      }
+
+      100% {
+        transform: rotate(0deg) scale(1) skew(1deg);
+      }
+    }
+
+    @keyframes ring-alo-circle-fill-anim {
+      0% {
+        opacity: 0.2;
+        transform: rotate(0deg) scale(0.7) skew(1deg);
+      }
+
+      50% {
+        opacity: 0.2;
+        transform: rotate(0deg) scale(1) skew(1deg);
+      }
+
+      100% {
+        opacity: 0.2;
+        transform: rotate(0deg) scale(0.7) skew(1deg);
+      }
+    }
+
+    .ring-alo-ph-img-circle a img {
+      padding: 1px 0 12px 1px;
+      width: 25px;
+      position: relative;
+      top: -1px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Phần đầu menu của page -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
+      <div class="container">
+        <a class="navbar-brand d-block d-md-none zoom-in-out-box" href="#">MUA NGAY</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">DELIKOST Q10</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#congdung">Công dụng</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#thanhphan">Thành phần</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#binhluan">Ý kiến khách hàng</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Liên hệ</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <a href="#" class="zoom-in-out-box d-none d-md-block">MUA NGAY</a>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- =============== -->
+
+  <!-- Phần nội dung chính của page -->
+  <main>
+    <section class="section-background">
+      <div class="container">
+        <div class="row align-items-center pt-5 pb-5">
+          <div class="col-md-6">
+            <h1>TĂNG SỨC ĐỀ KHÁNG</h1>
+            <h2 class="banner-h2">MỘT HỆ MIỄN DỊCH KHỎE MẠNH</h2>
+            <div class="list-paragraph">
+              <ul>
+                <li>
+                  <i class="fa fa-check" aria-hidden="true"></i>
+                  Giúp hỗ trợ tăng cường sức khỏe, tốt cho tim, nâng cao sức đề kháng, hạn chế lão hóa.
+                </li>
+                <li>
+                  <i class="fa fa-check" aria-hidden="true"></i>
+                  Cải thiện các triệu chứng đau thắt ngực
+                </li>
+                <li>
+                  <i class="fa fa-check" aria-hidden="true"></i>
+                  Phòng ngừa và điều trị xơ vữa động mạch.
+                </li>
+                <li>
+                  <i class="fa fa-check" aria-hidden="true"></i>
+                  Ngăn chặn biến chứng Tiểu đường và Mỡ máu.
+                </li>
+                <li>
+                  <i class="fa fa-check" aria-hidden="true"></i>
+                  Hỗ trợ tuần hoàn máu, bệnh thiếu máu ở tim.
+                </li>
+                <li>
+                  <i class="fa fa-check" aria-hidden="true"></i>
+                  Tăng cường năng lượng cho cơ thể, giúp tăng lực và làm khỏe hệ thống tim mạch , não, cơ bắp.
+                </li>
+              </ul>
+            </div>
+            <div class="mt-4 d-flex">
+              <a href="#" class="zoom-in-out-box background-order">
+                Đặt hàng ngay
+              </a>
+              <div class="like-pot">
+                <div id="pot">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" preserveAspectRatio="none"
+                    viewBox="0 0 1792 1896.0833" class="" fill="rgba(124, 149, 172, 1.0)">
+                    <path
+                      d="M1376 1408h32V768h-32q-35 0-67.5-12t-62.5-37-50-46-49-54q-2-3-3.5-4.5t-4-4.5-4.5-5q-72-81-112-145-14-22-38-68-1-3-10.5-22.5t-18.5-36-20-35.5-21.5-30.5T896 256q-71 0-115.5 30.5T736 384q0 43 15 84.5t33 68 33 55 15 48.5H256q-50 0-89 38.5T128 768q0 52 38 90t90 38h331q-15 17-25 47.5T552 999q0 69 53 119-18 32-18 69t17.5 73.5T652 1313q-4 24-4 56 0 85 48.5 126t135.5 41q84 0 183-32t194-64 167-32zm288-64q0-26-19-45t-45-19-45 19-19 45 19 45 45 19 45-19 19-45zm128-576v640q0 53-37.5 90.5T1664 1536h-288q-59 0-223 59-190 69-317 69-142 0-230-77.5T519 1369l1-5q-61-76-61-178 0-22 3-43-33-57-37-119H256q-105 0-180.5-76T0 767q0-103 76-179t180-76h374q-22-60-22-128 0-122 81.5-189T896 128q38 0 69.5 17.5t55 49.5 40.5 63 37 72 33 62q35 55 100 129 2 3 14 17t19 21.5 20.5 21.5 24 22.5 22.5 18 23.5 14 21.5 4.5h288q53 0 90.5 37.5T1792 768z">
+                    </path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <form class="col-md-6">
+            <img class="banner" width="100%" src="./xxxxxx.jpg" />
+          </form>
+        </div>
+        <div class="register mt-4 mb-5">
+          <div class="row">
+            <div class="col-md-6">
+              <iframe width="100%" height="315" src="https://www.youtube.com/embed/yvCWx2dH5q0"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            </div>
+            <div class="col-md-6">
+              <form class="register-form">
+                <div class="form-item form-heading">
+                  <h3>ĐĂNG KÝ TƯ VẤN</h3>
+                  <p>(Hoàn toàn miễn phí)</p>
+                </div>
+                <div class="form-item">
+                  <input autocomplete="off" tabindex="1" name="name" required="" class="form-control" type="text"
+                    placeholder="Họ và tên" value="" />
+                </div>
+                <div class="form-item">
+                  <input autocomplete="off" tabindex="1" name="name" required="" class="form-control" type="text"
+                    placeholder="Số điện thoại" value="" />
+                </div>
+                <div class="form-item">
+                  <input autocomplete="off" tabindex="1" name="name" required="" class="form-control" type="text"
+                    placeholder="Để lại lời nhắn cho chúng tôi" value="" />
+                </div>
+                <div class="form-item">
+                  <button class="form-button btn">ĐĂNG KÝ</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =============== -->
+
+    <!--  -->
+    <section class="section02 feauture">
+      <div class="">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <h2 class="heading-section text-start">DeliKost Q10 Vitamine</h2>
+              <p class="mt-3">
+                <b>Viên uống DeliKost Q10 Vitamine</b> được sản xuất bởi Công ty TNHH Bulk Medicines & Pharmaceuticals
+                và được nhà phân phối Công ty TNHH DeliKost Germany & Co.KG - Đức nhập khẩu về Việt Nam.
+              </p>
+              <ul class="mt-5 ps-4">
+                <li>
+                  Cổ đông sáng lập của Công ty Cổ phần DeliKost là những doanh nhân thành đạt có nhiều kinh nghiệm trong
+                  kinh doanh quốc tế, và những doanh nhân người Việt Nam đang định cư tại Đức, hay đã từng ở nước Đức
+                  lâu năm trở về, đó là những người được đào tạo rất căn bản. Họ nắm bắt rất rõ văn hóa, sức mạnh ...
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <img class="banner" width="100%" src="./03-q10.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =============== -->
+
+    <!--  -->
+    <section class="section03 feauture">
+      <div class="container">
+        <h2 class="heading-section " id="congdung">CÔNG DỤNG CỦA Delikost Q10</h2>
+        <h4 class="heading-effect uses">
+          Hiệu quả ngay sau tuần đầu tiên sử dụng.
+        </h4>
+        <div class="effect mt-4">
+          <div class="row align-items-center">
+            <div class="col-lg-6 effect-center">
+              <div class="d-flex effect-item mt-3">
+                <div class="effect-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" viewBox="0 0 30 30" version="1.1" x="0px"
+                    y="0px" preserveAspectRatio="none" width="100%" height="100%" class="" fill="#44adf2">
+                    <title>
+                      health_002-medical-cross-hospital-first-aid-doctor
+                    </title>
+                    <desc>Created with Sketch.</desc>
+                    <g stroke="none" stroke-width="1" fill-rule="evenodd" sketch:type="MSPage">
+                      <g sketch:type="MSArtboardGroup" transform="translate(-90.000000, -45.000000)">
+                        <path
+                          d="M105,71 C111.075132,71 116,66.0751322 116,60 C116,53.9248678 111.075132,49 105,49 C98.9248678,49 94,53.9248678 94,60 C94,66.0751322 98.9248678,71 105,71 Z M106.509521,55 L103.490479,55 C103.219595,55 103,55.2157526 103,55.495389 L103,58 L100.495389,58 C100.221793,58 100,58.2150574 100,58.4904785 L100,61.5095215 C100,61.7804053 100.215753,62 100.495389,62 L103,62 L103,64.504611 C103,64.7782068 103.215057,65 103.490479,65 L106.509521,65 C106.780405,65 107,64.7842474 107,64.504611 L107,62 L109.504611,62 C109.778207,62 110,61.7849426 110,61.5095215 L110,58.4904785 C110,58.2195947 109.784247,58 109.504611,58 L107,58 L107,55.495389 C107,55.2217932 106.784943,55 106.509521,55 Z"
+                          sketch:type="MSShapeGroup"></path>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <div class="effect-content ps-3">
+                  <h3>Giảm đường huyết.</h3>
+                  <h2>HỖ TRỢ ĐIỀU TRỊ TIỂU ĐƯỜNG.</h2>
+                  <p>
+                    Charantins, Polypeptid-P and Vicine có trong khổ qua rừng,
+                    giúp hạ đường huyết, hỗ trợ điều trị và ngăn ngừa biến
+                    chứng tiểu đường hiệu quả.
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex effect-item mt-3">
+                <div class="effect-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" viewBox="0 0 30 30" version="1.1" x="0px"
+                    y="0px" preserveAspectRatio="none" width="100%" height="100%" class="" fill="#44adf2">
+                    <title>
+                      health_002-medical-cross-hospital-first-aid-doctor
+                    </title>
+                    <desc>Created with Sketch.</desc>
+                    <g stroke="none" stroke-width="1" fill-rule="evenodd" sketch:type="MSPage">
+                      <g sketch:type="MSArtboardGroup" transform="translate(-90.000000, -45.000000)">
+                        <path
+                          d="M105,71 C111.075132,71 116,66.0751322 116,60 C116,53.9248678 111.075132,49 105,49 C98.9248678,49 94,53.9248678 94,60 C94,66.0751322 98.9248678,71 105,71 Z M106.509521,55 L103.490479,55 C103.219595,55 103,55.2157526 103,55.495389 L103,58 L100.495389,58 C100.221793,58 100,58.2150574 100,58.4904785 L100,61.5095215 C100,61.7804053 100.215753,62 100.495389,62 L103,62 L103,64.504611 C103,64.7782068 103.215057,65 103.490479,65 L106.509521,65 C106.780405,65 107,64.7842474 107,64.504611 L107,62 L109.504611,62 C109.778207,62 110,61.7849426 110,61.5095215 L110,58.4904785 C110,58.2195947 109.784247,58 109.504611,58 L107,58 L107,55.495389 C107,55.2217932 106.784943,55 106.509521,55 Z"
+                          sketch:type="MSShapeGroup"></path>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <div class="effect-content ps-3">
+                  <h3>Giảm đường huyết.</h3>
+                  <h2>HỖ TRỢ ĐIỀU TRỊ TIỂU ĐƯỜNG.</h2>
+                  <p>
+                    Charantins, Polypeptid-P and Vicine có trong khổ qua rừng,
+                    giúp hạ đường huyết, hỗ trợ điều trị và ngăn ngừa biến
+                    chứng tiểu đường hiệu quả.
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex effect-item mt-3">
+                <div class="effect-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" viewBox="0 0 30 30" version="1.1" x="0px"
+                    y="0px" preserveAspectRatio="none" width="100%" height="100%" class="" fill="#44adf2">
+                    <title>
+                      health_002-medical-cross-hospital-first-aid-doctor
+                    </title>
+                    <desc>Created with Sketch.</desc>
+                    <g stroke="none" stroke-width="1" fill-rule="evenodd" sketch:type="MSPage">
+                      <g sketch:type="MSArtboardGroup" transform="translate(-90.000000, -45.000000)">
+                        <path
+                          d="M105,71 C111.075132,71 116,66.0751322 116,60 C116,53.9248678 111.075132,49 105,49 C98.9248678,49 94,53.9248678 94,60 C94,66.0751322 98.9248678,71 105,71 Z M106.509521,55 L103.490479,55 C103.219595,55 103,55.2157526 103,55.495389 L103,58 L100.495389,58 C100.221793,58 100,58.2150574 100,58.4904785 L100,61.5095215 C100,61.7804053 100.215753,62 100.495389,62 L103,62 L103,64.504611 C103,64.7782068 103.215057,65 103.490479,65 L106.509521,65 C106.780405,65 107,64.7842474 107,64.504611 L107,62 L109.504611,62 C109.778207,62 110,61.7849426 110,61.5095215 L110,58.4904785 C110,58.2195947 109.784247,58 109.504611,58 L107,58 L107,55.495389 C107,55.2217932 106.784943,55 106.509521,55 Z"
+                          sketch:type="MSShapeGroup"></path>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <div class="effect-content ps-3">
+                  <h3>Giảm đường huyết.</h3>
+                  <h2>HỖ TRỢ ĐIỀU TRỊ TIỂU ĐƯỜNG.</h2>
+                  <p>
+                    Charantins, Polypeptid-P and Vicine có trong khổ qua rừng,
+                    giúp hạ đường huyết, hỗ trợ điều trị và ngăn ngừa biến
+                    chứng tiểu đường hiệu quả.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 effect-img-right">
+              <img width="100%" src="./q102-3.jpg" />
+            </div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col-lg-6 effect-img-left">
+              <img width="100%" src="./q10-4.jpg" />
+            </div>
+            <div class="col-lg-6 effect-center">
+              <div class="d-flex effect-item mt-3">
+                <div class="effect-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" viewBox="0 0 30 30" version="1.1" x="0px"
+                    y="0px" preserveAspectRatio="none" width="100%" height="100%" class="" fill="#44adf2">
+                    <title>
+                      health_002-medical-cross-hospital-first-aid-doctor
+                    </title>
+                    <desc>Created with Sketch.</desc>
+                    <g stroke="none" stroke-width="1" fill-rule="evenodd" sketch:type="MSPage">
+                      <g sketch:type="MSArtboardGroup" transform="translate(-90.000000, -45.000000)">
+                        <path
+                          d="M105,71 C111.075132,71 116,66.0751322 116,60 C116,53.9248678 111.075132,49 105,49 C98.9248678,49 94,53.9248678 94,60 C94,66.0751322 98.9248678,71 105,71 Z M106.509521,55 L103.490479,55 C103.219595,55 103,55.2157526 103,55.495389 L103,58 L100.495389,58 C100.221793,58 100,58.2150574 100,58.4904785 L100,61.5095215 C100,61.7804053 100.215753,62 100.495389,62 L103,62 L103,64.504611 C103,64.7782068 103.215057,65 103.490479,65 L106.509521,65 C106.780405,65 107,64.7842474 107,64.504611 L107,62 L109.504611,62 C109.778207,62 110,61.7849426 110,61.5095215 L110,58.4904785 C110,58.2195947 109.784247,58 109.504611,58 L107,58 L107,55.495389 C107,55.2217932 106.784943,55 106.509521,55 Z"
+                          sketch:type="MSShapeGroup"></path>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <div class="effect-content ps-3">
+                  <h3>Giảm đường huyết.</h3>
+                  <h2>HỖ TRỢ ĐIỀU TRỊ TIỂU ĐƯỜNG.</h2>
+                  <p>
+                    Charantins, Polypeptid-P and Vicine có trong khổ qua rừng,
+                    giúp hạ đường huyết, hỗ trợ điều trị và ngăn ngừa biến
+                    chứng tiểu đường hiệu quả.
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex effect-item mt-3">
+                <div class="effect-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" viewBox="0 0 30 30" version="1.1" x="0px"
+                    y="0px" preserveAspectRatio="none" width="100%" height="100%" class="" fill="#44adf2">
+                    <title>
+                      health_002-medical-cross-hospital-first-aid-doctor
+                    </title>
+                    <desc>Created with Sketch.</desc>
+                    <g stroke="none" stroke-width="1" fill-rule="evenodd" sketch:type="MSPage">
+                      <g sketch:type="MSArtboardGroup" transform="translate(-90.000000, -45.000000)">
+                        <path
+                          d="M105,71 C111.075132,71 116,66.0751322 116,60 C116,53.9248678 111.075132,49 105,49 C98.9248678,49 94,53.9248678 94,60 C94,66.0751322 98.9248678,71 105,71 Z M106.509521,55 L103.490479,55 C103.219595,55 103,55.2157526 103,55.495389 L103,58 L100.495389,58 C100.221793,58 100,58.2150574 100,58.4904785 L100,61.5095215 C100,61.7804053 100.215753,62 100.495389,62 L103,62 L103,64.504611 C103,64.7782068 103.215057,65 103.490479,65 L106.509521,65 C106.780405,65 107,64.7842474 107,64.504611 L107,62 L109.504611,62 C109.778207,62 110,61.7849426 110,61.5095215 L110,58.4904785 C110,58.2195947 109.784247,58 109.504611,58 L107,58 L107,55.495389 C107,55.2217932 106.784943,55 106.509521,55 Z"
+                          sketch:type="MSShapeGroup"></path>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <div class="effect-content ps-3">
+                  <h3>Giảm đường huyết.</h3>
+                  <h2>HỖ TRỢ ĐIỀU TRỊ TIỂU ĐƯỜNG.</h2>
+                  <p>
+                    Charantins, Polypeptid-P and Vicine có trong khổ qua rừng,
+                    giúp hạ đường huyết, hỗ trợ điều trị và ngăn ngừa biến
+                    chứng tiểu đường hiệu quả.
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex effect-item mt-3">
+                <div class="effect-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" viewBox="0 0 30 30" version="1.1" x="0px"
+                    y="0px" preserveAspectRatio="none" width="100%" height="100%" class="" fill="#44adf2">
+                    <title>
+                      health_002-medical-cross-hospital-first-aid-doctor
+                    </title>
+                    <desc>Created with Sketch.</desc>
+                    <g stroke="none" stroke-width="1" fill-rule="evenodd" sketch:type="MSPage">
+                      <g sketch:type="MSArtboardGroup" transform="translate(-90.000000, -45.000000)">
+                        <path
+                          d="M105,71 C111.075132,71 116,66.0751322 116,60 C116,53.9248678 111.075132,49 105,49 C98.9248678,49 94,53.9248678 94,60 C94,66.0751322 98.9248678,71 105,71 Z M106.509521,55 L103.490479,55 C103.219595,55 103,55.2157526 103,55.495389 L103,58 L100.495389,58 C100.221793,58 100,58.2150574 100,58.4904785 L100,61.5095215 C100,61.7804053 100.215753,62 100.495389,62 L103,62 L103,64.504611 C103,64.7782068 103.215057,65 103.490479,65 L106.509521,65 C106.780405,65 107,64.7842474 107,64.504611 L107,62 L109.504611,62 C109.778207,62 110,61.7849426 110,61.5095215 L110,58.4904785 C110,58.2195947 109.784247,58 109.504611,58 L107,58 L107,55.495389 C107,55.2217932 106.784943,55 106.509521,55 Z"
+                          sketch:type="MSShapeGroup"></path>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <div class="effect-content ps-3">
+                  <h3>Giảm đường huyết.</h3>
+                  <h2>HỖ TRỢ ĐIỀU TRỊ TIỂU ĐƯỜNG.</h2>
+                  <p>
+                    Charantins, Polypeptid-P and Vicine có trong khổ qua rừng,
+                    giúp hạ đường huyết, hỗ trợ điều trị và ngăn ngừa biến
+                    chứng tiểu đường hiệu quả.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col-lg-6 effect-center">
+              <div class="d-flex effect-item mt-3">
+                <div class="effect-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" viewBox="0 0 30 30" version="1.1" x="0px"
+                    y="0px" preserveAspectRatio="none" width="100%" height="100%" class="" fill="#44adf2">
+                    <title>
+                      health_002-medical-cross-hospital-first-aid-doctor
+                    </title>
+                    <desc>Created with Sketch.</desc>
+                    <g stroke="none" stroke-width="1" fill-rule="evenodd" sketch:type="MSPage">
+                      <g sketch:type="MSArtboardGroup" transform="translate(-90.000000, -45.000000)">
+                        <path
+                          d="M105,71 C111.075132,71 116,66.0751322 116,60 C116,53.9248678 111.075132,49 105,49 C98.9248678,49 94,53.9248678 94,60 C94,66.0751322 98.9248678,71 105,71 Z M106.509521,55 L103.490479,55 C103.219595,55 103,55.2157526 103,55.495389 L103,58 L100.495389,58 C100.221793,58 100,58.2150574 100,58.4904785 L100,61.5095215 C100,61.7804053 100.215753,62 100.495389,62 L103,62 L103,64.504611 C103,64.7782068 103.215057,65 103.490479,65 L106.509521,65 C106.780405,65 107,64.7842474 107,64.504611 L107,62 L109.504611,62 C109.778207,62 110,61.7849426 110,61.5095215 L110,58.4904785 C110,58.2195947 109.784247,58 109.504611,58 L107,58 L107,55.495389 C107,55.2217932 106.784943,55 106.509521,55 Z"
+                          sketch:type="MSShapeGroup"></path>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <div class="effect-content ps-3">
+                  <h3>Giảm đường huyết.</h3>
+                  <h2>HỖ TRỢ ĐIỀU TRỊ TIỂU ĐƯỜNG.</h2>
+                  <p>
+                    Charantins, Polypeptid-P and Vicine có trong khổ qua rừng,
+                    giúp hạ đường huyết, hỗ trợ điều trị và ngăn ngừa biến
+                    chứng tiểu đường hiệu quả.
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex effect-item mt-3">
+                <div class="effect-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" viewBox="0 0 30 30" version="1.1" x="0px"
+                    y="0px" preserveAspectRatio="none" width="100%" height="100%" class="" fill="#44adf2">
+                    <title>
+                      health_002-medical-cross-hospital-first-aid-doctor
+                    </title>
+                    <desc>Created with Sketch.</desc>
+                    <g stroke="none" stroke-width="1" fill-rule="evenodd" sketch:type="MSPage">
+                      <g sketch:type="MSArtboardGroup" transform="translate(-90.000000, -45.000000)">
+                        <path
+                          d="M105,71 C111.075132,71 116,66.0751322 116,60 C116,53.9248678 111.075132,49 105,49 C98.9248678,49 94,53.9248678 94,60 C94,66.0751322 98.9248678,71 105,71 Z M106.509521,55 L103.490479,55 C103.219595,55 103,55.2157526 103,55.495389 L103,58 L100.495389,58 C100.221793,58 100,58.2150574 100,58.4904785 L100,61.5095215 C100,61.7804053 100.215753,62 100.495389,62 L103,62 L103,64.504611 C103,64.7782068 103.215057,65 103.490479,65 L106.509521,65 C106.780405,65 107,64.7842474 107,64.504611 L107,62 L109.504611,62 C109.778207,62 110,61.7849426 110,61.5095215 L110,58.4904785 C110,58.2195947 109.784247,58 109.504611,58 L107,58 L107,55.495389 C107,55.2217932 106.784943,55 106.509521,55 Z"
+                          sketch:type="MSShapeGroup"></path>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <div class="effect-content ps-3">
+                  <h3>Giảm đường huyết.</h3>
+                  <h2>HỖ TRỢ ĐIỀU TRỊ TIỂU ĐƯỜNG.</h2>
+                  <p>
+                    Charantins, Polypeptid-P and Vicine có trong khổ qua rừng,
+                    giúp hạ đường huyết, hỗ trợ điều trị và ngăn ngừa biến
+                    chứng tiểu đường hiệu quả.
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex effect-item mt-3">
+                <div class="effect-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" viewBox="0 0 30 30" version="1.1" x="0px"
+                    y="0px" preserveAspectRatio="none" width="100%" height="100%" class="" fill="#44adf2">
+                    <title>
+                      health_002-medical-cross-hospital-first-aid-doctor
+                    </title>
+                    <desc>Created with Sketch.</desc>
+                    <g stroke="none" stroke-width="1" fill-rule="evenodd" sketch:type="MSPage">
+                      <g sketch:type="MSArtboardGroup" transform="translate(-90.000000, -45.000000)">
+                        <path
+                          d="M105,71 C111.075132,71 116,66.0751322 116,60 C116,53.9248678 111.075132,49 105,49 C98.9248678,49 94,53.9248678 94,60 C94,66.0751322 98.9248678,71 105,71 Z M106.509521,55 L103.490479,55 C103.219595,55 103,55.2157526 103,55.495389 L103,58 L100.495389,58 C100.221793,58 100,58.2150574 100,58.4904785 L100,61.5095215 C100,61.7804053 100.215753,62 100.495389,62 L103,62 L103,64.504611 C103,64.7782068 103.215057,65 103.490479,65 L106.509521,65 C106.780405,65 107,64.7842474 107,64.504611 L107,62 L109.504611,62 C109.778207,62 110,61.7849426 110,61.5095215 L110,58.4904785 C110,58.2195947 109.784247,58 109.504611,58 L107,58 L107,55.495389 C107,55.2217932 106.784943,55 106.509521,55 Z"
+                          sketch:type="MSShapeGroup"></path>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <div class="effect-content ps-3">
+                  <h3>Giảm đường huyết.</h3>
+                  <h2>HỖ TRỢ ĐIỀU TRỊ TIỂU ĐƯỜNG.</h2>
+                  <p>
+                    Charantins, Polypeptid-P and Vicine có trong khổ qua rừng,
+                    giúp hạ đường huyết, hỗ trợ điều trị và ngăn ngừa biến
+                    chứng tiểu đường hiệu quả.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 effect-img-right">
+              <img width="100%" src="./q102-2.jpg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =============== -->
+
+    <!--  -->
+    <section class="section04 feauture" id="thanhphan">
+      <div class="container">
+        <h2 class="heading-section">VIÊN THUỐC UỐNG Delikost Q10</h2>
+        <h4 class="heading-effect">
+          Không chất bảo quản và các chất gây hại cho cơ thể.
+        </h4>
+        <div class="row align-items-center mt-4">
+          <div class="col-lg-6 thanhphan-left">
+            <div class="thanhphan-item">
+              <h3>THÀNH PHẦN</h3>
+              <ul>
+                <li>Khổ qua rừng: 1,300 mg trong mỗi viên.</li>
+                <li>
+                  Thành phần khác: Magnesium stearate, talc553 (iii) vừa đủ.
+                </li>
+              </ul>
+            </div>
+            <div class="thanhphan-item mt-4">
+              <h3>Sử dụng & Bảo quản</h3>
+              <ul>
+                <li>Thời hạn sử dụng 36 tháng kể từ ngày sản xuất.</li>
+                <li>
+                  Ngày sản xuất & hạn sử dụng được in trên bao bì sản phẩm.
+                </li>
+                <li>
+                  Bảo quản nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <img class="banner" width="100%" src="./21688404_10210136028660964_949125767987168784_o.jpg" />
+          </div>
+        </div>
+        <div class="cachdung mt-4">
+          <div class="cachdung-border">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="cachdung-item">
+                  <h3>Cách dùng & Liều dùng</h3>
+                  <ul>
+                    <li>Ngày uống 2 lần, mỗi lần từ 1 - 2 viên.</li>
+                    <li>
+                      Uống trước hoặc sau ăn 30 phút.
+                    </li>
+                    <li>
+                      Nên sử dụng liên tục từ 2 - 3 tháng để phát huy tác dụng của sản phẩm.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="cachdung-item cachdung-item-right">
+                  <h3>Sử dụng & Bảo quản</h3>
+                  <ul>
+                    <li>Không dùng cho người thiếu máu, phụ nữ mang thai hoặc muốn có con.</li>
+                    <li>
+                      Trẻ em dưới 2 tuổi nên hạn chế dùng.
+                    </li>
+                    <li>
+                      Người tỳ vị hư hàn, thường xuyên bị tiêu chảy hoặc không có thực nhiệt thì không nên dùng thường
+                      xuyên.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+    <section class="section04 feauture">
+      <div class="container">
+        <h2 class="heading-section">ĐIỀU GÌ?</h2>
+        <h4 class="heading-effect">
+          KHIẾN Delikost Q10
+          TRỞ NÊN ĐẶC BIỆT
+        </h4>
+        <div class="row mt-4">
+          <div class="col-md-3 col-12">
+            <div class="perfect">
+              <div class="perfect-img">
+                <img width="100%"
+                  src="https://vinmec-prod.s3.amazonaws.com/images/20200229_163917_071937_benh-tim-mach.max-1800x1800.jpg">
+              </div>
+              <div class="perfect-content">
+                <h4>Hệ tim mạch</h4>
+                <p>
+                  Q10 có vai trò trong việc phòng ngừa và điều trị bệnh tim mạch thông qua cải thiện sản xuất năng lượng
+                  sinh học tế bào cơ tim. Bên cạnh đó Coenzyme Q10 còn là một chất chống oxy hoá.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-12">
+            <div class="perfect">
+              <div class="perfect-img">
+                <img width="100%"
+                  src="https://rohtoaohalclinic.com.vn/vnt_upload/File/Image/cham_soc_da_ngua_lao_hoa_tu_tin.jpg">
+              </div>
+              <div class="perfect-content">
+                <h4>Phòng ngừa lão hóa</h4>
+                <p>
+                  “Mạng lưới 5 chất cơ bản nhất chống ôxy hóa, trong đó có Coenzyme Q10.Gốc tự do được coi là nguyên
+                  nhân của hiện tượng lão hóa, nguồn gốc của một số bệnh như tim mạch, ung thư, suy giảm trí nhớ.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-12">
+            <div class="perfect">
+              <div class="perfect-img">
+                <img width="100%"
+                  src="https://login.medlatec.vn/ImagePath/imageslead/20200825/20200825_bi-quyet-giam-dau-dau-don-gian-va-hieu-qua.jpg">
+              </div>
+              <div class="perfect-content">
+                <h4>giảm đau đầu</h4>
+                <p>
+                  CoQ10 sống chủ yếu trong ti thể của các tế bào, nó đã được chứng minh trong việc cải thiện chức năng
+                  của ti thể và giúp giảm tình trạng viêm có thể xảy ra khi mắc chứng đau nửa đầu. </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-12">
+            <div class="perfect">
+              <div class="perfect-img">
+                <img width="100%"
+                  src="https://w.ladicdn.com/s500x400/63b3a745bcd4e8001226d71b/cac-loai-vitamin-va-khoang-chat-rat-can-thiet-cho-hoat-dong-song-cua-co-the-20230227083457-l8mso.jpg">
+              </div>
+              <div class="perfect-content">
+                <h4>VITAMIN</h4>
+                <p>
+                  Các vitamin: Vitamin C, E, B2, B6, B12, Zinc, Magnesium stearate, Silicon oxide, Gelatine.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+    <section class=" feauture">
+      <div class="container">
+        <h2 class="heading-section">GIẤY CHỨNG NHẬN</h2>
+        <h4 class="heading-effect">
+          VIÊN UỐNG Delikost Q10
+        </h4>
+        <p class="text-center">
+          <b>
+            Đã được Bộ Y Tế kiểm định chất lượng và cấp giấy chứng nhận dược phẩm đạt chuẩn.
+          </b>
+        </p>
+        <div class="row">
+          <div class="col-md-3 col-6 chungnhan-img">
+            <img width="100%" src="https://trungtamthuoc.com/images/products/delikost-q10-vitamine-9-p6218.jpg">
+          </div>
+          <div class="col-md-3 col-6 chungnhan-img">
+            <img width="100%" src="https://w.ladicdn.com/s550x600/5ebd07291e398e6f166fa8a0/1-20220621081624.png">
+          </div>
+          <div class="col-md-3 col-6 chungnhan-img">
+            <img width="100%" src="https://w.ladicdn.com/s550x600/5ebd07291e398e6f166fa8a0/7-20220621081607.png">
+          </div>
+          <div class="col-md-3 col-6 chungnhan-img">
+            <img width="100%" src="https://w.ladicdn.com/s550x600/5ebd07291e398e6f166fa8a0/2-20220621081624.png">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+    <section class="section04 feauture">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-12">
+            <div class="position-relative order-height">
+              <h2 class="heading-section text-start mb-4 order-now">
+                ĐẶT HÀNG<br>
+                NGAY HÔM NAY
+              </h2>
+            </div>
+            <span class="genuine">
+              ĐỂ MUA SẢN PHẨM CHÍNH HÃNG
+            </span>
+            <p class="uudai">VỚI GIÁ ƯU ĐÃI
+              <span>Delikost Q10 Nhập khẩu Đức</span>
+            </p>
+          </div>
+          <div class="col-md-3 col-12 d-none d-md-block">
+            <img width="100%" src="2.png">
+          </div>
+          <div class="col-md-5 col-12">
+            <form class="register-bottom">
+              <div class="form-item form-heading">
+                <h3>Khuyến mãi kết thúc sau</h3>
+              </div>
+              <div class="row">
+                <div class="col-md-3 text-center form-text">
+                  <p class="form-number">00</p>
+                  <p>Ngày</p>
+                </div>
+                <div class="col-md-3 text-center form-text">
+                  <p class="form-number">00</p>
+                  <p>Giờ</p>
+                </div>
+                <div class="col-md-3 text-center form-text">
+                  <p class="form-number">00</p>
+                  <p>Phút</p>
+                </div>
+                <div class="col-md-3 text-center form-text">
+                  <p class="form-number">00</p>
+                  <p>Giây</p>
+                </div>
+              </div>
+              <div class="form-item">
+                <input autocomplete="off" tabindex="1" name="name" required="" class="form-control" type="text"
+                  placeholder="Họ và tên" value="">
+              </div>
+              <div class="form-item">
+                <input autocomplete="off" tabindex="1" name="name" required="" class="form-control" type="text"
+                  placeholder="Số điện thoại" value="">
+              </div>
+              <div class="form-item">
+                <input autocomplete="off" tabindex="1" name="name" required="" class="form-control" type="text"
+                  placeholder="Địa chỉ" value="">
+              </div>
+              <div class="form-item">
+                <button class="form-button btn">ĐĂNG KÝ</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="feauture" id="binhluan">
+      <div class="comment">
+        <div class="container">
+          <h2 class="heading-comment">Tất cả bình luận</h2>
+          <h3 class="number-comment">203 Bình luận</h3>
+          <div class="people-comment mt-4">
+            <div class="d-flex">
+              <div class="people-comment-img">
+                <img width="100%"
+                  src="https://w.ladicdn.com/s400x400/5eda6c604ca19469618d2934/201525602_3024259081194383_8488269994430277169_n-20211111061542.jpg" />
+              </div>
+              <div class="people-comment-content ps-3">
+                <h4 class="name">Hoàng Thu Trang</h4>
+                <p class="content">
+                  Sản phẩm ok, mùi thơm dễ chịu. Mình được người quen giới
+                  thiệu sử dụng, hiện tại thấy sức khỏe cải thiện hơn khá
+                  nhiều.
+                  <br />Sẽ ủng hộ shop tiếp trong thời gian tới.
+                </p>
+                <div class="star">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <div class="like">
+                  Thích - Phản hồi
+                  <img class="ms-2"
+                    src="https://w.ladicdn.com/s350x350/5c7362c6c417ab07e5196b05/df-20191029092328.png" />
+                  4
+                  <span class="ms-2">43 phút trước</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="people-comment mt-4">
+            <div class="d-flex">
+              <div class="people-comment-img">
+                <img width="100%"
+                  src="https://w.ladicdn.com/s400x400/5eda6c604ca19469618d2934/216470910_332423901830407_4030468547357365745_n-20210810132318.jpg" />
+              </div>
+              <div class="people-comment-content ps-3">
+                <h4 class="name">Tuấn</h4>
+                <p class="content">
+                  Sản phẩm đầy đủ tem mác, chính hãng Đức. Mới dùng thấy mùi
+                  thơm dễ chịu, vị thanh, mát.
+                  <br />
+                  Shop giao hàng nhanh, tư vấn nhiệt tình.
+                </p>
+                <div class="star">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <div class="like">
+                  Thích - Phản hồi
+                  <img class="ms-2"
+                    src="https://w.ladicdn.com/s350x350/5c7362c6c417ab07e5196b05/df-20191029092328.png" />
+                  2
+                  <span class="ms-2">56 phút trước</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="people-comment mt-4">
+            <div class="d-flex">
+              <div class="people-comment-img">
+                <img width="100%"
+                  src="https://w.ladicdn.com/s400x400/5eda6c604ca19469618d2934/67922865_100760421285906_5976024015414755328_n-20210810132314.jpg" />
+              </div>
+              <div class="people-comment-content ps-3">
+                <h4 class="name">Anh Tú</h4>
+                <p class="content">
+                  Sản phẩm dùng ok lắm. Giá cũng hợp lý. Mình dùng 1 thời gian
+                  thấy cơ thể nhẹ nhàng, da dẻ tốt hơn hẳn.
+                  <br />
+                  Hi vọng sẽ có kết quả tốt hơn nữa nếu dùng lâu dài.
+                </p>
+                <div class="star">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <div class="like">
+                  Thích - Phản hồi
+                  <img class="ms-2"
+                    src="https://w.ladicdn.com/s350x350/5c7362c6c417ab07e5196b05/df-20191029092328.png" />
+                  3
+                  <span class="ms-2">1 ngày trước</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="people-comment mt-4">
+            <div class="d-flex">
+              <div class="people-comment-img">
+                <img width="100%"
+                  src="https://w.ladicdn.com/s400x400/5eda6c604ca19469618d2934/242779619_410954734008204_6422759393413638272_n-20211111061542.jpg" />
+              </div>
+              <div class="people-comment-content ps-3">
+                <h4 class="name">Lan Anh</h4>
+                <p class="content">
+                  Shop tư vấn khá nhiệt tình. Giao hàng nhanh, đầy đủ nhãn
+                  mác.
+                  <br />
+                  Chưa sử dụng nên chưa biết sao, hi vọng sẽ tốt.
+                </p>
+                <div class="star">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <div class="like">
+                  Thích - Phản hồi
+                  <img class="ms-2"
+                    src="https://w.ladicdn.com/s350x350/5c7362c6c417ab07e5196b05/df-20191029092328.png" />
+                  7
+                  <span class="ms-2">1 ngày trước</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="people-comment mt-4">
+            <div class="d-flex">
+              <div class="people-comment-img">
+                <img width="100%"
+                  src="https://w.ladicdn.com/s400x400/5c7362c6c417ab07e5196b05/uo2aipv220210125044318.jpg" />
+              </div>
+              <div class="people-comment-content ps-3">
+                <h4 class="name">Dư Văn Sinh</h4>
+                <p class="content">
+                  Mình đang sử dụng cũng được hơn 1 tuần, sau khi uống thuốc
+                  thì thấy đường huyết có giảm và ổn định, sức khỏe cải thiện,
+                  mình sẽ theo dõi.
+                  <br />
+                  Mình rất cảm ơn nhà thuốc.
+                </p>
+                <div class="star">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <div class="like">
+                  Thích - Phản hồi
+                  <img class="ms-2"
+                    src="https://w.ladicdn.com/s350x350/5c7362c6c417ab07e5196b05/df-20191029092328.png" />
+                  4
+                  <span class="ms-2">1 ngày trước</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex align-items-center ms-3 mt-4">
+            <div class="examples">
+              <div class="">
+                <div class="snippet" data-title="dot-elastic">
+                  <div class="stage">
+                    <div class="dot-elastic"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="ms-4" style="font-size: 13px">
+              Ai đó đang nhập bình luận...
+            </p>
+          </div>
+          <div class="danhgia">
+            <div class="row">
+              <div class="col-lg-8 col-md-8">
+                <div class="d-flex w-100">
+                  <div class="danhgia-img">
+                    <img width="100%"
+                      src="https://w.ladicdn.com/s400x350/5eda6c604ca19469618d2934/i3-20211016013454.png" />
+                  </div>
+                  <div class="danhgia-form">
+                    <textarea rows="2" class="form-control" placeholder="Để lại đánh giá hoặc bình luận..."></textarea>
+                    <input class="form-control" placeholder="Họ và tên" />
+                    <input class="form-control" placeholder="Số điện thoại" />
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4">
+                <div class="danhgia-star">
+                  <input id="1" class="me-2" type="radio" />
+                  <i class="fa fa-star"></i>
+                </div>
+                <div class="danhgia-star">
+                  <input id="1" class="me-2" type="radio" />
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <div class="danhgia-star">
+                  <input id="1" class="me-2" type="radio" />
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <div class="danhgia-star">
+                  <input id="1" class="me-2" type="radio" />
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <div class="danhgia-star">
+                  <input id="1" class="me-2" type="radio" />
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <div class="mt-5">
+                  <a class="status-click" href="#">Đăng bình luận</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- =============== -->
+
+  <!-- Phần chân trang của page -->
+  <footer class="feauture" id="footer">
+    <div class="container">
+      <h2>THÔNG TIN LIÊN HỆ</h2>
+      <div class="mt-3">
+        <p>
+          <b>Nhà phân phối sản phẩm:</b> Công ty THHH Dịch vụ và Phát triển
+        </p>
+        <p>Y Tế Hà Nội - Hanoi Mediserv</p>
+      </div>
+      <div class="mt-3">
+        <p><b>Địa chỉ:</b> 106 Hoàng Văn Thái, phường Khương Mai, quận</p>
+        <p>Thanh Xuân, Hà Nội</p>
+      </div>
+      <p class="mt-3"><b>Hotline:</b> 032 6616 120</p>
+    </div>
+  </footer>
+  <!-- =============== -->
+
+  <!-- Phone -->
+  <div class="fix_tel">
+    <div class="ring-alo-phone ring-alo-green ring-alo-show" id="ring-alo-phoneIcon"
+      style="right: 150px; bottom: -12px;">
+      <div class="ring-alo-ph-circle">
+      </div>
+      <div class="ring-alo-ph-circle-fill">
+      </div>
+      <div class="ring-alo-ph-img-circle">
+        <a href="tel:0912345678"><img class="lazy" src="https://codfe.com/wp-content/uploads/2020/08/call.png"
+            alt="G"></a>
+      </div>
+    </div>
+    <div class="tel">
+      <a href="tel:0912345678">
+        <p class="fone">
+          0123 456 789
+        </p>
+      </a>
+    </div>
+  </div>
+  <!-- Zalo -->
+  <div class="fix_zalo">
+    <div class="ring-alo-phone ring-alo-green ring-alo-show" id="ring-alo-phoneIcon" style="right: 0; bottom: -12px;">
+      <div class="ring-alo-ph-img-circle bg-transparent">
+        <a href="https://zalo.me/0359462619" target="_blank">
+          <img class="lazy"
+            src="https://w.ladicdn.com/s350x350/5c7362c6c417ab07e5196b05/6aecd4d3a513e32a11391a56d260574b-1-20200424042407-20200706022304.png">
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

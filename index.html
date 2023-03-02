@@ -11,931 +11,13 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- aos scroll  -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <style>
-    body {
-      font-family: "Montserrat", sans-serif;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 26px;
-      overflow-wrap: break-word;
-      word-break: normal;
-      transition: 0.5s;
-    }
-
-    h1,
-    h2,
-    h3,
-    p,
-    ul {
-      margin: 0;
-      padding: 0;
-    }
-
-    li.nav-item {
-      margin-right: 20px;
-    }
-
-    nav ul li a {
-      color: rgb(255, 255, 255) !important;
-      font-size: 16px;
-      font-weight: bold !important;
-      line-height: 1.6;
-      text-transform: uppercase;
-    }
-
-    nav ul li a.active {
-      color: rgb(255, 253, 1) !important;
-    }
-
-    .list-paragraph ul li {
-      list-style: none;
-      position: relative;
-      font-weight: bold;
-    }
-
-    .bg-light {
-      background-color: rgb(68 173 242) !important;
-    }
-
-    .banner {
-      border-radius: 4px;
-      box-shadow: 0px 0px 30px -15px rgb(7 28 58);
-    }
-
-    .section-background {
-      background-size: cover;
-      background-attachment: scroll;
-      background-origin: content-box;
-      background-image: url(https://w.ladicdn.com/5c7362c6c417ab07e5196b05/fdsgersg-20210112024759.gif);
-      background-position: center top;
-      background-repeat: repeat;
-      padding-top: 58px;
-    }
-
-    .section02 {
-
-      background-size: cover;
-      background-attachment: scroll;
-      background-origin: content-box;
-      background-image: url(https://w.ladicdn.com/s1440x659/5c7362c6c417ab07e5196b05/jjj-20210113024237.jpg);
-      background-position: center top;
-      background-repeat: repeat;
-    }
-
-    .section03 {
-      /* background-color: rgb(228, 228, 228)       */
-
-      background-size: cover;
-      background-attachment: scroll;
-      background-origin: content-box;
-      background-image: url(https://w.ladicdn.com/s1440x659/5c7362c6c417ab07e5196b05/jjj-20210113024237.jpg);
-      background-position: center top;
-      background-repeat: no-repeat;
-    }
-
-    .section04 {
-      background-size: cover;
-      background-attachment: scroll;
-      background-origin: content-box;
-      background-image: url(https://w.ladicdn.com/s1440x659/5c7362c6c417ab07e5196b05/jjj-20210113024237.jpg);
-      background-position: center top;
-      background-repeat: repeat;
-    }
-
-    .feauture {
-      padding: 40px 0;
-    }
-
-    .register {
-      background: linear-gradient(180deg, rgb(68 173 242), rgb(105 197 246));
-      border-radius: 5px;
-      padding: 15px 20px;
-      position: relative;
-    }
-
-    h1 {
-      font-size: 48px;
-      background: -webkit-linear-gradient(180deg,
-          rgba(247, 175, 5, 1),
-          rgba(207, 10, 2, 1));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      font-weight: bold;
-    }
-
-    h2.banner-h2 {
-      font-size: 24px;
-      font-weight: bold;
-      margin-left: 40px;
-      margin-bottom: 30px;
-    }
-
-    h3 {
-      font-weight: bold;
-    }
-
-    .form-heading {
-      background: linear-gradient(180deg, #ffe259, #ffa751);
-      -webkit-box-shadow: 0px 0px 30px -15px rgb(7 28 58);
-      border-radius: 5px;
-      text-align: center;
-      padding: 10px;
-      margin-bottom: 30px;
-      font-weight: bold;
-      margin-top: -45px;
-    }
-
-    .form-item input {
-      padding: 12px 14px;
-      margin-bottom: 10px;
-    }
-
-    .form-item input::placeholder {
-      color: #000;
-      font-size: 14px;
-    }
-
-    .form-button {
-      background: linear-gradient(180deg, #ffe259, #ffa751);
-      -webkit-box-shadow: 0px 0px 30px -15px rgb(7 28 58);
-      border-radius: 5px;
-      text-align: center;
-      padding: 10px;
-      font-weight: 600;
-      width: 100%;
-    }
-
-    .register-form {
-      padding: 0 30px;
-    }
-
-    .effect-icon {
-      width: 65px;
-      height: 28.5px;
-    }
-
-    .effect-content h3 {
-      color: rgb(145, 23, 16);
-      font-size: 16px;
-      font-weight: bold;
-      line-height: 1.6;
-    }
-
-    .effect-content h2 {
-      color: #44adf2;
-      font-size: 16px;
-      font-weight: bold;
-      line-height: 1.6;
-    }
-
-    .effect {
-      border-radius: 4px;
-      box-shadow: 0px 0px 30px -10px rgb(0 0 0 / 20%);
-      -webkit-box-shadow: 0px 0px 30px -10px rgb(0 0 0 / 20%);
-      background-color: rgb(255, 255, 255);
-    }
-
-    .heading-section {
-      color: #44adf2;
-      font-size: 33px;
-      font-weight: bold;
-      text-align: center;
-      text-transform: uppercase;
-    }
-
-    .heading-effect {
-      color: rgb(0, 0, 0);
-      font-size: 21px;
-      font-weight: bold;
-      text-align: center;
-      line-height: 1.6;
-    }
-
-    .perfect-img {
-      text-align: center;
-
-    }
-
-    .perfect-img img {
-      padding: 10px;
-      background: linear-gradient(180deg, rgba(255, 236, 141, 1.0), rgba(255, 249, 221, 1.0));
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      margin-bottom: 20px;
-      -webkit-box-shadow: 0px 0px 30px -10px rgb(0 0 0 / 20%);
-    }
-
-    .perfect-content h4 {
-      color: rgb(255, 85, 63);
-      font-size: 20px;
-      font-weight: bold;
-      text-align: left;
-      line-height: 1.2;
-      text-transform: uppercase;
-      text-align: center;
-    }
-
-    .genuine {
-      background-color: rgb(16, 145, 33);
-      border-radius: 1000px;
-      font-size: 18px;
-      font-weight: bold;
-      color: #fff;
-      padding: 8px 20px;
-      position: relative;
-    }
-
-    .uudai {
-      font-size: 18px;
-      font-weight: bold;
-      margin-top: 15px;
-    }
-
-    .register-bottom {
-      border-radius: 4px;
-      padding: 50px 30px;
-      background-color: rgb(16, 72, 145);
-    }
-
-    .register-bottom .form-heading {
-      margin-top: 0;
-      font-size: 18px;
-    }
-
-    .uudai span {
-      border-left: 2px solid #8d949e;
-      padding-left: 5px;
-      font-size: 14px;
-      color: #8d949e;
-    }
-
-    .uses {
-      text-decoration-line: underline;
-      -webkit-text-decoration-line: underline;
-      color: rgb(230, 74, 74);
-    }
-
-    .form-text {
-      color: #fff;
-      margin-bottom: 20px;
-    }
-
-    .form-number {
-      background-color: rgb(199, 75, 22);
-      font-size: 30px;
-      font-weight: 600;
-      color: #fff;
-      padding: 10px;
-      border-radius: 4px;
-    }
-
-    .effect-img-right {
-      padding-left: 0;
-    }
-
-    .effect-img-left {
-      padding-right: 0;
-    }
-
-    .effect-center {
-      padding: 0 30px;
-    }
-
-    .heading-comment {
-      font-family: "Montserrat", sans-serif;
-      color: rgb(91, 91, 91);
-      font-size: 25px;
-      font-weight: bold;
-      text-align: left;
-      line-height: 1.2;
-      margin-bottom: 30px;
-    }
-
-    .number-comment {
-      font-family: "Montserrat", sans-serif;
-      color: rgb(84, 84, 84);
-      font-size: 18px;
-      font-weight: bold;
-      text-align: left;
-      line-height: 1.2;
-      padding: 8px 0;
-      border-bottom: 1px solid rgb(84, 84, 84);
-    }
-
-    .people-comment-img {
-      width: 65px;
-    }
-
-    .people-comment-img img {
-      border-radius: 4px;
-    }
-
-    .people-comment-content .name {
-      color: rgb(75, 75, 75);
-      font-size: 15px;
-      font-weight: bold;
-      text-align: left;
-      line-height: 1.2;
-    }
-
-    .people-comment-content .content {
-      color: rgb(0, 0, 0);
-      font-size: 14px;
-      text-align: justify;
-      line-height: 1.4;
-    }
-
-    .star i {
-      font-size: 14px;
-      color: rgb(255, 188, 1);
-    }
-
-    .like {
-      font-family: "Montserrat", sans-serif;
-      color: rgb(67, 102, 176);
-      font-size: 12px;
-      text-align: left;
-      line-height: 1.2;
-      display: flex;
-      align-items: center;
-    }
-
-    .like img {
-      width: 24px;
-      margin-top: -2px;
-    }
-
-    .chungnhan-img img {
-      margin-top: 30px;
-      height: 340px;
-      border-radius: 4px;
-      border: 1px solid #44adf2;
-      -webkit-box-shadow: 0px 0px 30px -10px rgb(0 0 0 / 20%);
-    }
-
-    .danhgia {
-      background-color: rgb(255, 255, 255);
-      border-style: solid;
-      border-color: rgb(228, 228, 228);
-      border-width: 1px;
-      border-radius: 0px;
-      padding: 20px;
-      margin-top: 30px;
-      filter: drop-shadow(rgb(166, 166, 166) 0px 6px 6px);
-    }
-
-    .danhgia-img {
-      width: 80px;
-      border-radius: 50%;
-    }
-
-    .danhgia-form {
-      padding-left: 20px;
-      width: calc(100% - 80px);
-    }
-
-    .danhgia-form textarea,
-    .danhgia-form input {
-      border-radius: 1px;
-      margin-bottom: 10px;
-    }
-
-    .danhgia-star {
-      color: #8d949e;
-      font-size: 12px;
-      display: flex;
-      align-items: center;
-      padding: 5px;
-    }
-
-    .status-click {
-      font-size: 14px;
-      text-decoration: none;
-      color: #000;
-      font-weight: 600;
-      padding: 10px 40px;
-      border-radius: 4px;
-      background-color: rgb(255, 188, 1);
-    }
-
-    .danhgia-star i {
-      margin: 4px;
-    }
-
-    footer {
-      color: #fff;
-      background: linear-gradient(180deg, rgb(1 93 194), rgb(137 248 255));
-    }
-
-    footer h2 {
-      color: rgb(255, 253, 1);
-      font-size: 20px;
-      font-weight: bold;
-      text-align: left;
-      line-height: 1.4;
-    }
-
-    .thanhphan-item h3 {
-      color: #44adf2;
-      font-size: 22px;
-      font-weight: bold;
-      line-height: 1.6;
-      margin-bottom: 15px;
-    }
-
-    .thanhphan-item ul li {
-      list-style-type: "\1F44D";
-      padding-left: 5px;
-      margin-bottom: 10px;
-    }
-
-    .thanhphan-left {
-      padding-left: 50px;
-    }
-
-    .cachdung {
-      background-color: #44adf2;
-      border-radius: 4px;
-      padding: 15px;
-      box-shadow: 0px 0px 30px -10px rgb(0 0 0 / 20%);
-      -webkit-box-shadow: 0px 0px 30px -10px rgb(0 0 0 / 20%);
-      color: #fff;
-    }
-
-    .cachdung-border {
-      border: 1px solid #fff;
-      border-radius: 4px;
-      padding: 15px 40px;
-    }
-
-    .cachdung-item ul li {
-      list-style: none;
-    }
-
-    .cachdung-item h3 {
-      font-size: 22px;
-      font-weight: bold;
-      line-height: 1.6;
-      margin-bottom: 15px;
-    }
-
-    .cachdung-item-right {
-      border-left: 1px solid #fff;
-      padding-left: 20px;
-    }
-
-    /* three dots */
-    .dot-elastic {
-      position: relative;
-      width: 5px;
-      height: 5px;
-      border-radius: 5px;
-      background-color: #8d949e;
-      color: #8d949e;
-      animation: dot-elastic 1s infinite linear;
-    }
-
-    .dot-elastic::before,
-    .dot-elastic::after {
-      content: "";
-      display: inline-block;
-      position: absolute;
-      top: 0;
-    }
-
-    .dot-elastic::before {
-      left: -10px;
-      width: 5px;
-      height: 5px;
-      border-radius: 5px;
-      background-color: #8d949e;
-      color: #8d949e;
-      animation: dot-elastic-before 1s infinite linear;
-    }
-
-    .dot-elastic::after {
-      left: 10px;
-      width: 5px;
-      height: 5px;
-      border-radius: 5px;
-      background-color: #8d949e;
-      color: #8d949e;
-      animation: dot-elastic-after 1s infinite linear;
-    }
-
-    @keyframes dot-elastic-before {
-      0% {
-        transform: scale(1, 1);
-      }
-
-      25% {
-        transform: scale(1, 1.5);
-      }
-
-      50% {
-        transform: scale(1, 0.67);
-      }
-
-      75% {
-        transform: scale(1, 1);
-      }
-
-      100% {
-        transform: scale(1, 1);
-      }
-    }
-
-    @keyframes dot-elastic {
-      0% {
-        transform: scale(1, 1);
-      }
-
-      25% {
-        transform: scale(1, 1);
-      }
-
-      50% {
-        transform: scale(1, 1.5);
-      }
-
-      75% {
-        transform: scale(1, 1);
-      }
-
-      100% {
-        transform: scale(1, 1);
-      }
-    }
-
-    @keyframes dot-elastic-after {
-      0% {
-        transform: scale(1, 1);
-      }
-
-      25% {
-        transform: scale(1, 1);
-      }
-
-      50% {
-        transform: scale(1, 0.67);
-      }
-
-      75% {
-        transform: scale(1, 1.5);
-      }
-
-      100% {
-        transform: scale(1, 1);
-      }
-    }
-
-    .zoom-in-out-box {
-      padding: 6px 30px;
-      border-radius: 99px;
-      color: #fff;
-      background: rgb(230, 74, 74);
-      font-weight: bold;
-      text-decoration: none;
-      animation: zoom-in-zoom-out 1.15s ease infinite;
-    }
-
-    .background-order {
-      background-color: #44adf2;
-      padding: 8px 40px;
-    }
-
-    @keyframes zoom-in-zoom-out {
-      0% {
-        transform: scale(1, 1);
-      }
-
-      50% {
-        transform: scale(1.15, 1.15);
-      }
-
-      100% {
-        transform: scale(1, 1);
-      }
-    }
-
-    .like-pot {
-      width: 100px;
-      position: relative;
-      margin-left: 20px;
-      margin-top: 5px;
-    }
-
-    #pot {
-      position: absolute;
-      top: 0;
-      -webkit-animation: linear infinite;
-      -webkit-animation-name: run;
-      -webkit-animation-duration: 0.3s;
-    }
-    .order-height {
-      height: 100px;
-      margin: 20px 0;
-    }
-    .order-now {
-      position: absolute;
-      top: 0;
-      -webkit-animation: linear infinite;
-      -webkit-animation-name: order-now;
-      -webkit-animation-duration: 0.5s;
-    }
-    @-webkit-keyframes run {
-      0% {
-        left: 0;
-      }
-
-      50% {
-        left: 15%;
-      }
-
-      100% {
-        left: 0;
-      }
-    }
-    @-webkit-keyframes order-now {
-      0% {
-        top: 0;
-      }
-
-      50% {
-        top: 15%;
-      }
-
-      100% {
-        top: 0;
-      }
-    }
-    @media (min-width: 1400px) {
-      .container {
-        max-width: 1140px;
-      }
-    }
-
-    /*  */
-    /* write your CSS code here 90949ca6 */
-    /*them nut call*/
-    :root {
-      --phone-text-color: #fff;
-      /* màu chữ */
-      --phone-icon-color: coral;
-      --phone-bg-color: #44adf2;
-      /* màu nền nút gọi */
-      --phone-text-bg-color: rgb(230, 74, 74);
-      /* màu nền text */
-      --phone-border-color: ;
-      /* màu vòng tròn */
-      --phone-hover-color: #f86e00;
-      /* màu vòng tròn re chuột */
-      --phone-hover2-color: red;
-      /* màu vòng tròn re chuột */
-    }
-
-    .fone {
-      font-size: 19px;
-      /* chữ cạnh nút gọi */
-      color: var(--phone-text-color);
-      line-height: 40px;
-      font-weight: bold;
-      padding-left: 48px;
-      /* cách bên trái cho chữ */
-      margin: 0 0;
-    }
-
-    .fix_tel {
-      position: fixed;
-      bottom: 50px;
-      left: 30px;
-      z-index: 999;
-    }
-
-    .fix_zalo {
-      position: fixed;
-      bottom: 70px;
-      right: 30px;
-      z-index: 999;
-    }
-
-    /* left 18px là cách bên trái 18px. nếu muốn cho nút gọi sang phải thay là right */
-    .fix_tel a {
-      text-decoration: none;
-      display: block;
-    }
-
-    .tel {
-      background: var(--phone-text-bg-color);
-      width: 205px;
-      height: 40px;
-      position: relative;
-      overflow: hidden;
-      background-size: 40px;
-      border-radius: 28px;
-      border: none
-    }
-
-    .ring-alo-phone {
-      background-color: transparent;
-      cursor: pointer;
-      height: 80px;
-      position: absolute;
-      transition: visibility 0.5s ease 0s;
-      visibility: hidden;
-      width: 80px;
-      z-index: 200000 !important;
-    }
-
-    .ring-alo-phone.ring-alo-show {
-      visibility: visible;
-    }
-
-    .ring-alo-phone.ring-alo-hover,
-    .ring-alo-phone:hover {
-      opacity: 1;
-    }
-
-    .ring-alo-ph-circle {
-      animation: 1.2s ease-in-out 0s normal none infinite running ring-alo-circle-anim;
-      background-color: transparent;
-      border: 2px solid rgba(30, 30, 30, 0.4);
-      border-radius: 100%;
-      height: 70px;
-      left: 10px;
-      opacity: 0.1;
-      position: absolute;
-      top: 12px;
-      transform-origin: 50% 50% 0;
-      transition: all 0.5s ease 0s;
-      width: 70px;
-    }
-
-    .ring-alo-phone.ring-alo-active .ring-alo-ph-circle {
-      animation: 1.1s ease-in-out 0s normal none infinite running ring-alo-circle-anim !important;
-    }
-
-    .ring-alo-phone.ring-alo-static .ring-alo-ph-circle {
-      animation: 2.2s ease-in-out 0s normal none infinite running ring-alo-circle-anim !important;
-    }
-
-    .ring-alo-phone.ring-alo-hover .ring-alo-ph-circle,
-    .ring-alo-phone:hover .ring-alo-ph-circle {
-      border-color: var(--phone-border-color);
-      opacity: 0.5;
-    }
-
-    .ring-alo-phone.ring-alo-green.ring-alo-hover .ring-alo-ph-circle,
-    .ring-alo-phone.ring-alo-green:hover .ring-alo-ph-circle {
-      border-color: var(--phone-hover2-color);
-      opacity: 0.5;
-    }
-
-    .ring-alo-phone.ring-alo-green .ring-alo-ph-circle {
-      border-color: var(--phone-border-color);
-      opacity: 0.5;
-    }
-
-    .ring-alo-ph-circle-fill {
-      animation: 2.3s ease-in-out 0s normal none infinite running ring-alo-circle-fill-anim;
-      background-color: #000;
-      border: 2px solid transparent;
-      border-radius: 100%;
-      height: 30px;
-      left: 30px;
-      opacity: 0.1;
-      position: absolute;
-      top: 33px;
-      transform-origin: 50% 50% 0;
-      transition: all 0.5s ease 0s;
-      width: 30px;
-    }
-
-    .ring-alo-phone.ring-alo-hover .ring-alo-ph-circle-fill,
-    .ring-alo-phone:hover .ring-alo-ph-circle-fill {
-      background-color: var(--phone-hover-color);
-      opacity: 0.75 !important;
-    }
-
-    .ring-alo-phone.ring-alo-green.ring-alo-hover .ring-alo-ph-circle-fill,
-    .ring-alo-phone.ring-alo-green:hover .ring-alo-ph-circle-fill {
-      background-color: var(--phone-hover-color);
-      opacity: 0.75 !important;
-    }
-
-    .ring-alo-phone.ring-alo-green .ring-alo-ph-circle-fill {
-      background-color: var(--phone-hover-color);
-      opacity: 0.75 !important;
-    }
-
-    .ring-alo-ph-img-circle {
-      animation: 1s ease-in-out 0s normal none infinite running ring-alo-circle-img-anim;
-      border: 2px solid transparent;
-      border-radius: 100%;
-      height: 30px;
-      left: 30px;
-      opacity: 1;
-      position: absolute;
-      top: 33px;
-      transform-origin: 50% 50% 0;
-      width: 30px;
-    }
-
-    .ring-alo-phone.ring-alo-hover .ring-alo-ph-img-circle,
-    .ring-alo-phone:hover .ring-alo-ph-img-circle {
-      background-color: var(--phone-text-bg-color);
-    }
-
-    .ring-alo-phone.ring-alo-green.ring-alo-hover .ring-alo-ph-img-circle,
-    .ring-alo-phone.ring-alo-green:hover .ring-alo-ph-img-circle {
-      background-color: var(--phone-hover2-color);
-    }
-
-    .ring-alo-phone.ring-alo-green .ring-alo-ph-img-circle {
-      background-color: var(--phone-bg-color);
-    }
-
-    .fix_zalo .lazy {
-      width: 50px;
-    }
-
-    @keyframes ring-alo-circle-anim {
-      0% {
-        opacity: 0.1;
-        transform: rotate(0deg) scale(0.5) skew(1deg);
-      }
-
-      30% {
-        opacity: 0.5;
-        transform: rotate(0deg) scale(0.7) skew(1deg);
-      }
-
-      100% {
-        opacity: 0.6;
-        transform: rotate(0deg) scale(1) skew(1deg);
-      }
-    }
-
-    @keyframes ring-alo-circle-img-anim {
-      0% {
-        transform: rotate(0deg) scale(1) skew(1deg);
-      }
-
-      10% {
-        transform: rotate(-25deg) scale(1) skew(1deg);
-      }
-
-      20% {
-        transform: rotate(25deg) scale(1) skew(1deg);
-      }
-
-      30% {
-        transform: rotate(-25deg) scale(1) skew(1deg);
-      }
-
-      40% {
-        transform: rotate(25deg) scale(1) skew(1deg);
-      }
-
-      50% {
-        transform: rotate(0deg) scale(1) skew(1deg);
-      }
-
-      100% {
-        transform: rotate(0deg) scale(1) skew(1deg);
-      }
-    }
-
-    @keyframes ring-alo-circle-fill-anim {
-      0% {
-        opacity: 0.2;
-        transform: rotate(0deg) scale(0.7) skew(1deg);
-      }
-
-      50% {
-        opacity: 0.2;
-        transform: rotate(0deg) scale(1) skew(1deg);
-      }
-
-      100% {
-        opacity: 0.2;
-        transform: rotate(0deg) scale(0.7) skew(1deg);
-      }
-    }
-
-    .ring-alo-ph-img-circle a img {
-      padding: 1px 0 12px 1px;
-      width: 25px;
-      position: relative;
-      top: -1px;
-    }
-  </style>
+  <link rel="stylesheet" href="./style.css" >
 </head>
 
 <body>
   <!-- Phần đầu menu của page -->
   <header>
+    <!-- menu -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
       <div class="container">
         <a class="navbar-brand d-block d-md-none zoom-in-out-box" href="#">MUA NGAY</a>
@@ -944,6 +26,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- danh sách các menu -->
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active" href="#">DELIKOST Q10</a>
@@ -1023,6 +106,7 @@
             </div>
           </div>
           <form class="col-md-6" data-aos="fade-left">
+            <!-- ảnh 1 -->
             <img class="banner" width="100%" src="./xxxxxx.jpg" />
           </form>
         </div>
@@ -1035,6 +119,7 @@
                 allowfullscreen></iframe>
             </div>
             <div class="col-md-6">
+              <!-- đăng ký tư vấn -->
               <form class="register-form">
                 <div class="form-item form-heading">
                   <h3>ĐĂNG KÝ TƯ VẤN</h3>
@@ -1063,7 +148,7 @@
     </section>
     <!-- =============== -->
 
-    <!--  -->
+    <!-- giới thiệu công ty -->
     <section class="section02 feauture">
       <div class="">
         <div class="container">
@@ -1083,6 +168,7 @@
               </ul>
             </div>
             <div class="col-md-6" data-aos="fade-left">
+              <!-- ảnh 2 -->
               <img class="banner" width="100%" src="./03-q10.jpg">
             </div>
           </div>
@@ -1091,7 +177,7 @@
     </section>
     <!-- =============== -->
 
-    <!--  -->
+    <!-- công dụng của delikost q10  -->
     <section class="section03 feauture">
       <div class="container">
         <h2 class="heading-section " id="congdung">CÔNG DỤNG CỦA Delikost Q10</h2>
@@ -1099,288 +185,155 @@
           Hiệu quả ngay sau tuần đầu tiên sử dụng.
         </h4>
         <div class="effect mt-4">
+          <!-- công dụng 1 -->
           <div class="row align-items-center">
             <div class="col-lg-6 effect-center" data-aos="fade-right">
               <div class="d-flex effect-item mt-3">
                 <div class="effect-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                    xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" viewBox="0 0 30 30" version="1.1" x="0px"
-                    y="0px" preserveAspectRatio="none" width="100%" height="100%" class="" fill="#44adf2">
-                    <title>
-                      health_002-medical-cross-hospital-first-aid-doctor
-                    </title>
-                    <desc>Created with Sketch.</desc>
-                    <g stroke="none" stroke-width="1" fill-rule="evenodd" sketch:type="MSPage">
-                      <g sketch:type="MSArtboardGroup" transform="translate(-90.000000, -45.000000)">
-                        <path
-                          d="M105,71 C111.075132,71 116,66.0751322 116,60 C116,53.9248678 111.075132,49 105,49 C98.9248678,49 94,53.9248678 94,60 C94,66.0751322 98.9248678,71 105,71 Z M106.509521,55 L103.490479,55 C103.219595,55 103,55.2157526 103,55.495389 L103,58 L100.495389,58 C100.221793,58 100,58.2150574 100,58.4904785 L100,61.5095215 C100,61.7804053 100.215753,62 100.495389,62 L103,62 L103,64.504611 C103,64.7782068 103.215057,65 103.490479,65 L106.509521,65 C106.780405,65 107,64.7842474 107,64.504611 L107,62 L109.504611,62 C109.778207,62 110,61.7849426 110,61.5095215 L110,58.4904785 C110,58.2195947 109.784247,58 109.504611,58 L107,58 L107,55.495389 C107,55.2217932 106.784943,55 106.509521,55 Z"
-                          sketch:type="MSShapeGroup"></path>
-                      </g>
-                    </g>
-                  </svg>
+                  <embed src="./cong.svg">
                 </div>
                 <div class="effect-content ps-3">
-                  <h3>Giảm đường huyết.</h3>
-                  <h2>HỖ TRỢ ĐIỀU TRỊ TIỂU ĐƯỜNG.</h2>
+                  <h3>Bảo vệ phổi.</h3>
+                  <h2 style="text-transform: uppercase;">giảm tổn thương oxy hóa</h2>
                   <p>
-                    Charantins, Polypeptid-P and Vicine có trong khổ qua rừng,
-                    giúp hạ đường huyết, hỗ trợ điều trị và ngăn ngừa biến
-                    chứng tiểu đường hiệu quả.
+                    Làm giảm viêm ở những người bị hen suyễn cải thiện về hiệu suất vận động ở những người bị COPD. Điều này được quan sát thông qua quá trình oxy hóa mô và nhịp tim tốt hơn sau khi bổ sung CoQ10.
                   </p>
                 </div>
               </div>
               <div class="d-flex effect-item mt-3">
                 <div class="effect-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                    xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" viewBox="0 0 30 30" version="1.1" x="0px"
-                    y="0px" preserveAspectRatio="none" width="100%" height="100%" class="" fill="#44adf2">
-                    <title>
-                      health_002-medical-cross-hospital-first-aid-doctor
-                    </title>
-                    <desc>Created with Sketch.</desc>
-                    <g stroke="none" stroke-width="1" fill-rule="evenodd" sketch:type="MSPage">
-                      <g sketch:type="MSArtboardGroup" transform="translate(-90.000000, -45.000000)">
-                        <path
-                          d="M105,71 C111.075132,71 116,66.0751322 116,60 C116,53.9248678 111.075132,49 105,49 C98.9248678,49 94,53.9248678 94,60 C94,66.0751322 98.9248678,71 105,71 Z M106.509521,55 L103.490479,55 C103.219595,55 103,55.2157526 103,55.495389 L103,58 L100.495389,58 C100.221793,58 100,58.2150574 100,58.4904785 L100,61.5095215 C100,61.7804053 100.215753,62 100.495389,62 L103,62 L103,64.504611 C103,64.7782068 103.215057,65 103.490479,65 L106.509521,65 C106.780405,65 107,64.7842474 107,64.504611 L107,62 L109.504611,62 C109.778207,62 110,61.7849426 110,61.5095215 L110,58.4904785 C110,58.2195947 109.784247,58 109.504611,58 L107,58 L107,55.495389 C107,55.2217932 106.784943,55 106.509521,55 Z"
-                          sketch:type="MSShapeGroup"></path>
-                      </g>
-                    </g>
-                  </svg>
+                  <embed src="./cong.svg">
                 </div>
                 <div class="effect-content ps-3">
-                  <h3>Giảm đường huyết.</h3>
-                  <h2>HỖ TRỢ ĐIỀU TRỊ TIỂU ĐƯỜNG.</h2>
+                  <h3>Điều trị bệnh tim</h3>
+                  <h2 style="text-transform: uppercase;">Hỗ trợ điều trị các bệnh tim mạch</h2>
                   <p>
-                    Charantins, Polypeptid-P and Vicine có trong khổ qua rừng,
-                    giúp hạ đường huyết, hỗ trợ điều trị và ngăn ngừa biến
-                    chứng tiểu đường hiệu quả.
+                    Điều trị bằng Q10 có thể hỗ trợ khôi phục mức sản xuất năng lượng tối ưu, giảm tổn thương oxy hóa và cải thiện chức năng tim, tất cả đều có thể hỗ trợ điều trị suy tim.
                   </p>
                 </div>
               </div>
               <div class="d-flex effect-item mt-3">
                 <div class="effect-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                    xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" viewBox="0 0 30 30" version="1.1" x="0px"
-                    y="0px" preserveAspectRatio="none" width="100%" height="100%" class="" fill="#44adf2">
-                    <title>
-                      health_002-medical-cross-hospital-first-aid-doctor
-                    </title>
-                    <desc>Created with Sketch.</desc>
-                    <g stroke="none" stroke-width="1" fill-rule="evenodd" sketch:type="MSPage">
-                      <g sketch:type="MSArtboardGroup" transform="translate(-90.000000, -45.000000)">
-                        <path
-                          d="M105,71 C111.075132,71 116,66.0751322 116,60 C116,53.9248678 111.075132,49 105,49 C98.9248678,49 94,53.9248678 94,60 C94,66.0751322 98.9248678,71 105,71 Z M106.509521,55 L103.490479,55 C103.219595,55 103,55.2157526 103,55.495389 L103,58 L100.495389,58 C100.221793,58 100,58.2150574 100,58.4904785 L100,61.5095215 C100,61.7804053 100.215753,62 100.495389,62 L103,62 L103,64.504611 C103,64.7782068 103.215057,65 103.490479,65 L106.509521,65 C106.780405,65 107,64.7842474 107,64.504611 L107,62 L109.504611,62 C109.778207,62 110,61.7849426 110,61.5095215 L110,58.4904785 C110,58.2195947 109.784247,58 109.504611,58 L107,58 L107,55.495389 C107,55.2217932 106.784943,55 106.509521,55 Z"
-                          sketch:type="MSShapeGroup"></path>
-                      </g>
-                    </g>
-                  </svg>
+                  <embed src="./cong.svg">
                 </div>
                 <div class="effect-content ps-3">
-                  <h3>Giảm đường huyết.</h3>
-                  <h2>HỖ TRỢ ĐIỀU TRỊ TIỂU ĐƯỜNG.</h2>
+                  <h3>Cải thiện sinh sản</h3>
+                  <h2 style="text-transform: uppercase;">Giúp cải thiện sinh sản ở cả nam và nữ</h2>
                   <p>
-                    Charantins, Polypeptid-P and Vicine có trong khổ qua rừng,
-                    giúp hạ đường huyết, hỗ trợ điều trị và ngăn ngừa biến
-                    chứng tiểu đường hiệu quả.
+                    Bổ sung Q10 giúp làm chậm và thậm chí có thể đảo ngược sự suy giảm chất lượng và cải thiện chất lượng, hoạt động và sự tập trung bằng cách tăng cường bảo vệ chống oxy hóa.
                   </p>
                 </div>
               </div>
             </div>
             <div class="col-lg-6 effect-img-right" data-aos="fade-left">
+              <!-- ảnh 3 -->
               <img width="100%" src="./q102-3.jpg" />
             </div>
           </div>
+          <!--  -->
+          <!-- công dụng 2 -->
           <div class="row align-items-center">
             <div class="col-lg-6 effect-img-left" data-aos="fade-right">
+              <!-- ảnh 4 -->
               <img width="100%" src="./q10-4.jpg" />
             </div>
             <div class="col-lg-6 effect-center" data-aos="fade-left">
               <div class="d-flex effect-item mt-3">
                 <div class="effect-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                    xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" viewBox="0 0 30 30" version="1.1" x="0px"
-                    y="0px" preserveAspectRatio="none" width="100%" height="100%" class="" fill="#44adf2">
-                    <title>
-                      health_002-medical-cross-hospital-first-aid-doctor
-                    </title>
-                    <desc>Created with Sketch.</desc>
-                    <g stroke="none" stroke-width="1" fill-rule="evenodd" sketch:type="MSPage">
-                      <g sketch:type="MSArtboardGroup" transform="translate(-90.000000, -45.000000)">
-                        <path
-                          d="M105,71 C111.075132,71 116,66.0751322 116,60 C116,53.9248678 111.075132,49 105,49 C98.9248678,49 94,53.9248678 94,60 C94,66.0751322 98.9248678,71 105,71 Z M106.509521,55 L103.490479,55 C103.219595,55 103,55.2157526 103,55.495389 L103,58 L100.495389,58 C100.221793,58 100,58.2150574 100,58.4904785 L100,61.5095215 C100,61.7804053 100.215753,62 100.495389,62 L103,62 L103,64.504611 C103,64.7782068 103.215057,65 103.490479,65 L106.509521,65 C106.780405,65 107,64.7842474 107,64.504611 L107,62 L109.504611,62 C109.778207,62 110,61.7849426 110,61.5095215 L110,58.4904785 C110,58.2195947 109.784247,58 109.504611,58 L107,58 L107,55.495389 C107,55.2217932 106.784943,55 106.509521,55 Z"
-                          sketch:type="MSShapeGroup"></path>
-                      </g>
-                    </g>
-                  </svg>
+                  <embed src="./cong.svg">
                 </div>
                 <div class="effect-content ps-3">
-                  <h3>Giảm đường huyết.</h3>
-                  <h2>HỖ TRỢ ĐIỀU TRỊ TIỂU ĐƯỜNG.</h2>
+                  <h3>Trẻ hoá làn da</h3>
+                  <h2 style="text-transform: uppercase;">làm chậm quá trình lão hoá</h2>
                   <p>
-                    Charantins, Polypeptid-P and Vicine có trong khổ qua rừng,
-                    giúp hạ đường huyết, hỗ trợ điều trị và ngăn ngừa biến
-                    chứng tiểu đường hiệu quả.
+                    Giúp kích thích các tế bào da hoạt động mạnh mẽ để trao đổi chất dinh dưỡng và năng lượng cần thiết, giúp tái tạo da, đồng thời loại bỏ những độc tố gây hại cho da.
                   </p>
                 </div>
               </div>
               <div class="d-flex effect-item mt-3">
                 <div class="effect-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                    xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" viewBox="0 0 30 30" version="1.1" x="0px"
-                    y="0px" preserveAspectRatio="none" width="100%" height="100%" class="" fill="#44adf2">
-                    <title>
-                      health_002-medical-cross-hospital-first-aid-doctor
-                    </title>
-                    <desc>Created with Sketch.</desc>
-                    <g stroke="none" stroke-width="1" fill-rule="evenodd" sketch:type="MSPage">
-                      <g sketch:type="MSArtboardGroup" transform="translate(-90.000000, -45.000000)">
-                        <path
-                          d="M105,71 C111.075132,71 116,66.0751322 116,60 C116,53.9248678 111.075132,49 105,49 C98.9248678,49 94,53.9248678 94,60 C94,66.0751322 98.9248678,71 105,71 Z M106.509521,55 L103.490479,55 C103.219595,55 103,55.2157526 103,55.495389 L103,58 L100.495389,58 C100.221793,58 100,58.2150574 100,58.4904785 L100,61.5095215 C100,61.7804053 100.215753,62 100.495389,62 L103,62 L103,64.504611 C103,64.7782068 103.215057,65 103.490479,65 L106.509521,65 C106.780405,65 107,64.7842474 107,64.504611 L107,62 L109.504611,62 C109.778207,62 110,61.7849426 110,61.5095215 L110,58.4904785 C110,58.2195947 109.784247,58 109.504611,58 L107,58 L107,55.495389 C107,55.2217932 106.784943,55 106.509521,55 Z"
-                          sketch:type="MSShapeGroup"></path>
-                      </g>
-                    </g>
-                  </svg>
+                  <embed src="./cong.svg">
                 </div>
                 <div class="effect-content ps-3">
-                  <h3>Giảm đường huyết.</h3>
-                  <h2>HỖ TRỢ ĐIỀU TRỊ TIỂU ĐƯỜNG.</h2>
+                  <h3>Giảm đau đầu.</h3>
+                  <h2 style="text-transform: uppercase;">ngăn ngừa và điều trị chứng đau nửa đầu.</h2>
                   <p>
-                    Charantins, Polypeptid-P and Vicine có trong khổ qua rừng,
-                    giúp hạ đường huyết, hỗ trợ điều trị và ngăn ngừa biến
-                    chứng tiểu đường hiệu quả.
+                    Trên thực tế, một nghiên cứu trên 42 người mắc chứng đau nửa đầu đã chỉ ra rằng bổ sung Q10 có khả năng làm giảm số lượng chứng đau nửa đầu cao hơn gấp ba lần so với giả dược.
                   </p>
                 </div>
               </div>
               <div class="d-flex effect-item mt-3">
                 <div class="effect-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                    xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" viewBox="0 0 30 30" version="1.1" x="0px"
-                    y="0px" preserveAspectRatio="none" width="100%" height="100%" class="" fill="#44adf2">
-                    <title>
-                      health_002-medical-cross-hospital-first-aid-doctor
-                    </title>
-                    <desc>Created with Sketch.</desc>
-                    <g stroke="none" stroke-width="1" fill-rule="evenodd" sketch:type="MSPage">
-                      <g sketch:type="MSArtboardGroup" transform="translate(-90.000000, -45.000000)">
-                        <path
-                          d="M105,71 C111.075132,71 116,66.0751322 116,60 C116,53.9248678 111.075132,49 105,49 C98.9248678,49 94,53.9248678 94,60 C94,66.0751322 98.9248678,71 105,71 Z M106.509521,55 L103.490479,55 C103.219595,55 103,55.2157526 103,55.495389 L103,58 L100.495389,58 C100.221793,58 100,58.2150574 100,58.4904785 L100,61.5095215 C100,61.7804053 100.215753,62 100.495389,62 L103,62 L103,64.504611 C103,64.7782068 103.215057,65 103.490479,65 L106.509521,65 C106.780405,65 107,64.7842474 107,64.504611 L107,62 L109.504611,62 C109.778207,62 110,61.7849426 110,61.5095215 L110,58.4904785 C110,58.2195947 109.784247,58 109.504611,58 L107,58 L107,55.495389 C107,55.2217932 106.784943,55 106.509521,55 Z"
-                          sketch:type="MSShapeGroup"></path>
-                      </g>
-                    </g>
-                  </svg>
+                  <embed src="./cong.svg">
                 </div>
                 <div class="effect-content ps-3">
-                  <h3>Giảm đường huyết.</h3>
-                  <h2>HỖ TRỢ ĐIỀU TRỊ TIỂU ĐƯỜNG.</h2>
+                  <h3>Hệ cơ bắp.</h3>
+                  <h2 style="text-transform: uppercase;">tăng cường chức năng của hệ cơ bắp</h2>
                   <p>
-                    Charantins, Polypeptid-P and Vicine có trong khổ qua rừng,
-                    giúp hạ đường huyết, hỗ trợ điều trị và ngăn ngừa biến
-                    chứng tiểu đường hiệu quả.
+                    Những người bổ sung 1.200 mg Q10 mỗi ngày trong 60 ngày đã giảm sự mất cân bằng oxy hoá rõ rệt. 
+                    Q10 có thể giúp tăng sức mạnh trong khi tập luyện thể dục, thể thao và giảm mệt mỏi, cả hai đều có thể cải thiện hiệu suất tập luyện
                   </p>
                 </div>
               </div>
             </div>
           </div>
+          <!--  -->
+          <!-- công dụng 3 -->
           <div class="row align-items-center">
             <div class="col-lg-6 effect-center" data-aos="fade-right">
               <div class="d-flex effect-item mt-3">
                 <div class="effect-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                    xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" viewBox="0 0 30 30" version="1.1" x="0px"
-                    y="0px" preserveAspectRatio="none" width="100%" height="100%" class="" fill="#44adf2">
-                    <title>
-                      health_002-medical-cross-hospital-first-aid-doctor
-                    </title>
-                    <desc>Created with Sketch.</desc>
-                    <g stroke="none" stroke-width="1" fill-rule="evenodd" sketch:type="MSPage">
-                      <g sketch:type="MSArtboardGroup" transform="translate(-90.000000, -45.000000)">
-                        <path
-                          d="M105,71 C111.075132,71 116,66.0751322 116,60 C116,53.9248678 111.075132,49 105,49 C98.9248678,49 94,53.9248678 94,60 C94,66.0751322 98.9248678,71 105,71 Z M106.509521,55 L103.490479,55 C103.219595,55 103,55.2157526 103,55.495389 L103,58 L100.495389,58 C100.221793,58 100,58.2150574 100,58.4904785 L100,61.5095215 C100,61.7804053 100.215753,62 100.495389,62 L103,62 L103,64.504611 C103,64.7782068 103.215057,65 103.490479,65 L106.509521,65 C106.780405,65 107,64.7842474 107,64.504611 L107,62 L109.504611,62 C109.778207,62 110,61.7849426 110,61.5095215 L110,58.4904785 C110,58.2195947 109.784247,58 109.504611,58 L107,58 L107,55.495389 C107,55.2217932 106.784943,55 106.509521,55 Z"
-                          sketch:type="MSShapeGroup"></path>
-                      </g>
-                    </g>
-                  </svg>
+                  <embed src="./cong.svg">
                 </div>
                 <div class="effect-content ps-3">
-                  <h3>Giảm đường huyết.</h3>
-                  <h2>HỖ TRỢ ĐIỀU TRỊ TIỂU ĐƯỜNG.</h2>
+                  <h3>Điều trị bệnh tiểu đường.</h3>
+                  <h2 style="text-transform: uppercase;">hỗ trợ điều trị bệnh tiểu đường</h2>
                   <p>
-                    Charantins, Polypeptid-P and Vicine có trong khổ qua rừng,
-                    giúp hạ đường huyết, hỗ trợ điều trị và ngăn ngừa biến
-                    chứng tiểu đường hiệu quả.
+                    Đã được chứng minh là cải thiện độ nhạy insulin và điều chỉnh lượng đường trong máu.
+Có thể giúp tăng nồng độ CoQ10 trong máu lên đến ba lần ở những người mắc bệnh tiểu đường, những người thường có mức CoQ10 thấp.
                   </p>
                 </div>
               </div>
               <div class="d-flex effect-item mt-3">
                 <div class="effect-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                    xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" viewBox="0 0 30 30" version="1.1" x="0px"
-                    y="0px" preserveAspectRatio="none" width="100%" height="100%" class="" fill="#44adf2">
-                    <title>
-                      health_002-medical-cross-hospital-first-aid-doctor
-                    </title>
-                    <desc>Created with Sketch.</desc>
-                    <g stroke="none" stroke-width="1" fill-rule="evenodd" sketch:type="MSPage">
-                      <g sketch:type="MSArtboardGroup" transform="translate(-90.000000, -45.000000)">
-                        <path
-                          d="M105,71 C111.075132,71 116,66.0751322 116,60 C116,53.9248678 111.075132,49 105,49 C98.9248678,49 94,53.9248678 94,60 C94,66.0751322 98.9248678,71 105,71 Z M106.509521,55 L103.490479,55 C103.219595,55 103,55.2157526 103,55.495389 L103,58 L100.495389,58 C100.221793,58 100,58.2150574 100,58.4904785 L100,61.5095215 C100,61.7804053 100.215753,62 100.495389,62 L103,62 L103,64.504611 C103,64.7782068 103.215057,65 103.490479,65 L106.509521,65 C106.780405,65 107,64.7842474 107,64.504611 L107,62 L109.504611,62 C109.778207,62 110,61.7849426 110,61.5095215 L110,58.4904785 C110,58.2195947 109.784247,58 109.504611,58 L107,58 L107,55.495389 C107,55.2217932 106.784943,55 106.509521,55 Z"
-                          sketch:type="MSShapeGroup"></path>
-                      </g>
-                    </g>
-                  </svg>
+                  <embed src="./cong.svg">
                 </div>
                 <div class="effect-content ps-3">
-                  <h3>Giảm đường huyết.</h3>
-                  <h2>HỖ TRỢ ĐIỀU TRỊ TIỂU ĐƯỜNG.</h2>
+                  <h3>Ngăn ung thư.</h3>
+                  <h2 style="text-transform: uppercase;">góp phần ngăn ngừa ung thư</h2>
                   <p>
-                    Charantins, Polypeptid-P and Vicine có trong khổ qua rừng,
-                    giúp hạ đường huyết, hỗ trợ điều trị và ngăn ngừa biến
-                    chứng tiểu đường hiệu quả.
+                    Những bệnh nhân ung thư thường được thấy có mức CoQ10 thấp. Mức độ CoQ10 thấp có liên quan đến nguy cơ ung thư cao hơn tới 53,3% và cho thấy tiên lượng xấu đối với các loại ung thư khác nhau. 
                   </p>
                 </div>
               </div>
               <div class="d-flex effect-item mt-3">
                 <div class="effect-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                    xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" viewBox="0 0 30 30" version="1.1" x="0px"
-                    y="0px" preserveAspectRatio="none" width="100%" height="100%" class="" fill="#44adf2">
-                    <title>
-                      health_002-medical-cross-hospital-first-aid-doctor
-                    </title>
-                    <desc>Created with Sketch.</desc>
-                    <g stroke="none" stroke-width="1" fill-rule="evenodd" sketch:type="MSPage">
-                      <g sketch:type="MSArtboardGroup" transform="translate(-90.000000, -45.000000)">
-                        <path
-                          d="M105,71 C111.075132,71 116,66.0751322 116,60 C116,53.9248678 111.075132,49 105,49 C98.9248678,49 94,53.9248678 94,60 C94,66.0751322 98.9248678,71 105,71 Z M106.509521,55 L103.490479,55 C103.219595,55 103,55.2157526 103,55.495389 L103,58 L100.495389,58 C100.221793,58 100,58.2150574 100,58.4904785 L100,61.5095215 C100,61.7804053 100.215753,62 100.495389,62 L103,62 L103,64.504611 C103,64.7782068 103.215057,65 103.490479,65 L106.509521,65 C106.780405,65 107,64.7842474 107,64.504611 L107,62 L109.504611,62 C109.778207,62 110,61.7849426 110,61.5095215 L110,58.4904785 C110,58.2195947 109.784247,58 109.504611,58 L107,58 L107,55.495389 C107,55.2217932 106.784943,55 106.509521,55 Z"
-                          sketch:type="MSShapeGroup"></path>
-                      </g>
-                    </g>
-                  </svg>
+                  <embed src="./cong.svg">
                 </div>
                 <div class="effect-content ps-3">
-                  <h3>Giảm đường huyết.</h3>
-                  <h2>HỖ TRỢ ĐIỀU TRỊ TIỂU ĐƯỜNG.</h2>
+                  <h3>Não và hệ thần kinh.</h3>
+                  <h2 style="text-transform: uppercase;">góp phần ngăn ngừa ung thư</h2>
                   <p>
-                    Charantins, Polypeptid-P and Vicine có trong khổ qua rừng,
-                    giúp hạ đường huyết, hỗ trợ điều trị và ngăn ngừa biến
-                    chứng tiểu đường hiệu quả.
+                    Có khả năng bảo vệ các tế bào não khỏi tác hại của quá trình oxy hóa và giảm tác động của các hợp chất có hại có thể dẫn đến bệnh về não.
                   </p>
                 </div>
               </div>
             </div>
             <div class="col-lg-6 effect-img-right" data-aos="fade-left">
+              <!-- ảnh 5 -->
               <img width="100%" src="./q102-2.jpg" />
             </div>
           </div>
+          <!--  -->
         </div>
       </div>
     </section>
     <!-- =============== -->
 
-    <!--  -->
+    <!-- thành phần viên uống -->
     <section class="section04 feauture" id="thanhphan">
       <div class="container">
-        <h2 class="heading-section">VIÊN THUỐC UỐNG Delikost Q10</h2>
+        <h2 class="heading-section">VIÊN UỐNG DELIKOST Q10</h2>
         <h4 class="heading-effect">
           Không chất bảo quản và các chất gây hại cho cơ thể.
         </h4>
@@ -1389,26 +342,27 @@
             <div class="thanhphan-item">
               <h3>THÀNH PHẦN</h3>
               <ul>
-                <li>Khổ qua rừng: 1,300 mg trong mỗi viên.</li>
-                <li>
-                  Thành phần khác: Magnesium stearate, talc553 (iii) vừa đủ.
-                </li>
+                <li>Coenzym Q10 90mg, Vitamin C 60mg</li>
+                <li>Kẽm 5mg, Vitamin E 12mg, Vitamin B6 1.4mg</li>
+                <li>Vitamin B2 1,2mg, Vitmain B12 2,5mcg, Tá dược vừa đủ.</li>
               </ul>
             </div>
             <div class="thanhphan-item mt-4">
               <h3>Sử dụng & Bảo quản</h3>
               <ul>
-                <li>Thời hạn sử dụng 36 tháng kể từ ngày sản xuất.</li>
+                <li>Bảo quản trong trong bao bì kín, 
+                  Để nơi khô ráo, thoáng mát,</li>
                 <li>
-                  Ngày sản xuất & hạn sử dụng được in trên bao bì sản phẩm.
+                  Tránh ánh sáng nhiệt độ mặt trời cao
                 </li>
                 <li>
-                  Bảo quản nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.
+                  DeliKost Q10 + Vitamine cần được bảo quản nơi có độ ẩm không quá cao, nhiệt độ phòng thích hợp, không quá 30 độ C.
                 </li>
               </ul>
             </div>
           </div>
           <div class="col-lg-6" data-aos="fade-left">
+            <!-- ảnh 6 -->
             <img class="banner" width="100%" src="./21688404_10210136028660964_949125767987168784_o.jpg" />
           </div>
         </div>
@@ -1419,10 +373,11 @@
                 <div class="cachdung-item">
                   <h3>Cách dùng & Liều dùng</h3>
                   <ul>
-                    <li>Ngày uống 2 lần, mỗi lần từ 1 - 2 viên.</li>
+                    <li>DeliKost Q10 + Vitamine được chỉ định sử dụng 1 viên một ngày.</li>
                     <li>
-                      Uống trước hoặc sau ăn 30 phút.
+                      Uống viên uống với nhiều nước, uống cùng với bữa ăn và không được nhai nát viên thuốc.
                     </li>
+                    <li>Bệnh nhân không được tự ý tăng liều mà không được sự cho phép của bác sĩ.</li>
                     <li>
                       Nên sử dụng liên tục từ 2 - 3 tháng để phát huy tác dụng của sản phẩm.
                     </li>
@@ -1431,15 +386,14 @@
               </div>
               <div class="col-lg-6">
                 <div class="cachdung-item cachdung-item-right">
-                  <h3>Sử dụng & Bảo quản</h3>
+                  <h3>Lưu ý:</h3>
                   <ul>
-                    <li>Không dùng cho người thiếu máu, phụ nữ mang thai hoặc muốn có con.</li>
+                    <li>Thận trọng khi sử dụng cho phụ nữ có thai và bà mẹ đang cho con bú.</li>
                     <li>
-                      Trẻ em dưới 2 tuổi nên hạn chế dùng.
+                      Thực phẩm này không phải là thuốc, không có tác dụng thay thế thuốc chữa bệnh, hiệu quả sử dụng sản phẩm tùy thuộc cơ địa của từng người
                     </li>
                     <li>
-                      Người tỳ vị hư hàn, thường xuyên bị tiêu chảy hoặc không có thực nhiệt thì không nên dùng thường
-                      xuyên.
+                      Sản phẩm được chỉ định sử dụng cho người trưởng thành, không có chỉ định cho trẻ em và người cao tuổi.
                     </li>
                   </ul>
                 </div>
@@ -1450,13 +404,12 @@
       </div>
     </section>
 
-    <!--  -->
+    <!-- lợi ích của q10 -->
     <section class="section04 feauture">
       <div class="container">
         <h2 class="heading-section">ĐIỀU GÌ?</h2>
         <h4 class="heading-effect">
-          KHIẾN Delikost Q10
-          TRỞ NÊN ĐẶC BIỆT
+          Khiến Delikost Q10 trở nên đặc biệt
         </h4>
         <div class="row mt-4">
           <div class="col-md-3 col-12">
@@ -1520,12 +473,12 @@
       </div>
     </section>
 
-    <!--  -->
+    <!-- giấy chứng nhận -->
     <section class=" feauture">
       <div class="container">
         <h2 class="heading-section">GIẤY CHỨNG NHẬN</h2>
         <h4 class="heading-effect">
-          VIÊN UỐNG Delikost Q10
+          VIÊN UỐNG DELIKOST Q10
         </h4>
         <p class="text-center">
           <b>
@@ -1534,7 +487,7 @@
         </p>
         <div class="row">
           <div class="col-md-3 col-6 chungnhan-img">
-            <img width="100%" src="https://trungtamthuoc.com/images/products/delikost-q10-vitamine-9-p6218.jpg">
+            <img width="100%" src="./giaychungnhan.jpg">
           </div>
           <div class="col-md-3 col-6 chungnhan-img">
             <img width="100%" src="https://w.ladicdn.com/s550x600/5ebd07291e398e6f166fa8a0/1-20220621081624.png">
@@ -1549,7 +502,7 @@
       </div>
     </section>
 
-    <!--  -->
+    <!-- khuyến mãi -->
     <section class="section04 feauture">
       <div class="container">
         <div class="row">
@@ -1568,6 +521,7 @@
             </p>
           </div>
           <div class="col-md-3 col-12 d-none d-md-block">
+            <!-- ảnh 7 -->
             <img width="100%" src="2.png">
           </div>
           <div class="col-md-5 col-12" data-aos="fade-up">
@@ -1614,6 +568,7 @@
       </div>
     </section>
 
+    <!-- bình luận facebook -->
     <section class="feauture" id="binhluan">
       <div class="comment">
         <div class="container">
@@ -1843,25 +798,25 @@
   <!-- =============== -->
 
   <!-- Phần chân trang của page -->
+  <!-- thông tin liên hệ -->
   <footer class="feauture" id="footer">
     <div class="container">
       <h2>THÔNG TIN LIÊN HỆ</h2>
       <div class="mt-3">
         <p>
-          <b>Nhà phân phối sản phẩm:</b> Công ty THHH Dịch vụ và Phát triển
+          <b>Nhà phân phối sản phẩm:</b> Công ty TNHH Dịch vụ đâu tư phát triển y tế Hà Nội
         </p>
-        <p>Y Tế Hà Nội - Hanoi Mediserv</p>
       </div>
       <div class="mt-3">
-        <p><b>Địa chỉ:</b> 106 Hoàng Văn Thái, phường Khương Mai, quận</p>
-        <p>Thanh Xuân, Hà Nội</p>
+        <p><b>Website:</b> www.hanoimediserv.com</p>
+        <p class="mt-3"><b>Facebook:</b> @DeliKostQ10</p>
       </div>
-      <p class="mt-3"><b>Hotline:</b> 032 6616 120</p>
+      <p class="mt-3"><b>Hotline:</b> 024.3732.0216</p>
     </div>
   </footer>
   <!-- =============== -->
 
-  <!-- Phone -->
+  <!-- phần animation điện thoại -->
   <div class="fix_tel">
     <div class="ring-alo-phone ring-alo-green ring-alo-show" id="ring-alo-phoneIcon"
       style="right: 150px; bottom: -12px;">
@@ -1876,16 +831,18 @@
     </div>
     <div class="tel">
       <a href="tel:0912345678">
+        <!-- số điện thoại  -->
         <p class="fone">
-          0123 456 789
+          0793 135 505
         </p>
       </a>
     </div>
   </div>
-  <!-- Zalo -->
+  <!-- ==== zalo ==== -->
   <div class="fix_zalo">
     <div class="ring-alo-phone ring-alo-green ring-alo-show" id="ring-alo-phoneIcon" style="right: 0; bottom: -12px;">
       <div class="ring-alo-ph-img-circle bg-transparent">
+        <!-- nơi thay đổi địa chỉ zalo -->
         <a href="https://zalo.me/0793135505" target="_blank">
           <img class="lazy"
             src="https://w.ladicdn.com/s350x350/5c7362c6c417ab07e5196b05/6aecd4d3a513e32a11391a56d260574b-1-20200424042407-20200706022304.png">

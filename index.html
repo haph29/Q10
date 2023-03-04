@@ -800,24 +800,36 @@ Có thể giúp tăng nồng độ CoQ10 trong máu lên đến ba lần ở nh�
     <div class="container">
       <h2>THÔNG TIN LIÊN HỆ</h2>
       <div class="mt-3">
-        <p>
-          <b>Nhà phân phối sản phẩm:</b> Công ty TNHH Dịch vụ đầu tư phát triển y tế Hà Nội
+        <p class="d-flex align-items-center">
+          <embed width="30" src="./cty.svg">
+          <b class="ms-2">Nhà phân phối sản phẩm:</b> Công ty TNHH Dịch vụ đầu tư phát triển y tế Hà Nội
         </p>
       </div>
       <div class="mt-3">
-        <p>
-          <b>Website:</b> 
+        <p class="d-flex align-items-center">
+          <embed width="20" src="./web.svg">
+          <b class="ms-2">Website:</b> 
           <a class="text-white" href="https://hanoimediserv.com/">www.hanoimediserv.com</a>
         </p>
-        <p class="mt-3"><b>Facebook:</b> 
+        <p class="mt-3 d-flex align-items-center">
+          <embed width="20" src="./fb.svg">
+          <b class="ms-2">Facebook:</b> 
           <a class="text-white" href="https://www.facebook.com/DelikostQ10nhapkhauduchanoimediserv">
             DelikostQ10nhapkhauduchanoimediserv
           </a>
         </p>
       </div>
-      <p class="mt-3"><b>Hotline:</b> 0793.135.505</p>
+      <p class="mt-3 d-flex align-items-center">
+        <embed width="25" src="./phone.svg">
+        <b class="ms-2">Hotline:</b> 0793.135.505
+      </p>
     </div>
   </footer>
+  <div class="footer-bottom background-order p-3">
+    <div class="container text-center text-white">
+      <b><i>Thực phẩm này không phải là thuốc, không có tác dụng thay thế thuốc</i></b>
+    </div>
+  </div>
   <!-- =============== -->
 
   <!-- phần animation điện thoại -->
@@ -842,6 +854,7 @@ Có thể giúp tăng nồng độ CoQ10 trong máu lên đến ba lần ở nh�
       </a>
     </div>
   </div>
+
   <!-- ==== zalo ==== -->
   <div class="fix_zalo">
     <div class="ring-alo-phone ring-alo-green ring-alo-show" id="ring-alo-phoneIcon" style="right: 0; bottom: -12px;">
@@ -854,7 +867,104 @@ Có thể giúp tăng nồng độ CoQ10 trong máu lên đến ba lần ở nh�
       </div>
     </div>
   </div>
-  <!--  -->
+
+  <!-- hiển thị thông báo -->
+  
+  <div id="my-alert" class="alert hide">
+    <div class="d-flex align-items-center alert-border">
+      <img style="border-radius: 50%;" src="./alert.jpg" width="80">
+      <div class="ps-2">
+        <p>Chị <b>Minh</b> ở Hà Nội đã đặt hàng thành công</p>
+        <h5 class="mt-2">VIÊN UỐNG DELIKOST Q10</h5>
+      </div>
+    </div>
+  </div>
+  <div id="my-alert1" class="alert hide">
+    <div class="d-flex align-items-center alert-border">
+      <img style="border-radius: 50%;" src="./alert.jpg" width="80">
+      <div class="ps-2">
+        <p>Anh <b>Sơn</b> ở Hà Nội đã đặt hàng thành công</p>
+        <h5 class="mt-2">VIÊN UỐNG DELIKOST Q10</h5>
+      </div>
+    </div>
+  </div>
+  <div id="my-alert2" class="alert hide">
+    <div class="d-flex align-items-center alert-border">
+      <img style="border-radius: 50%;" src="./alert.jpg" width="80">
+      <div class="ps-2">
+        <p>Anh <b>Hùng</b> ở Bắc Giang đã đặt hàng thành công</p>
+        <h5 class="mt-2">VIÊN UỐNG DELIKOST Q10</h5>
+      </div>
+    </div>
+  </div>
+  <div id="my-alert3" class="alert hide">
+    <div class="d-flex align-items-center alert-border">
+      <img style="border-radius: 50%;" src="./alert.jpg" width="80">
+      <div class="ps-2">
+        <p>Chị <b>Ly</b> ở Hồ Chí Minh đã đặt hàng thành công</p>
+        <h5 class="mt-2">VIÊN UỐNG DELIKOST Q10</h5>
+      </div>
+    </div>
+  </div>
+  <div id="my-alert4" class="alert hide">
+    <div class="d-flex align-items-center alert-border">
+      <img style="border-radius: 50%;" src="./alert.jpg" width="80">
+      <div class="ps-2">
+        <p>Chị <b>Huyền</b> ở Hải Phòng đã đặt hàng thành công</p>
+        <h5 class="mt-2">VIÊN UỐNG DELIKOST Q10</h5>
+      </div>
+    </div>
+  </div>
+  <div id="my-alert5" class="alert hide">
+    <div class="d-flex align-items-center alert-border">
+      <img style="border-radius: 50%;" src="./alert.jpg" width="80">
+      <div class="ps-2">
+        <p>Anh <b>Tuấn</b> ở Hà nội đã đặt hàng thành công</p>
+        <h5 class="mt-2">VIÊN UỐNG DELIKOST Q10</h5>
+      </div>
+    </div>
+  </div>
+
+  <!-- setTimeout -->
+  <script>
+    setTimeout(function(){
+      document.getElementById('my-alert').classList.remove('hide');
+    }, 5000); // (tức là 5 giây)
+    setTimeout(function(){
+      document.getElementById('my-alert').classList.add('hide');
+    }, 9000); // (tức là 9 giây)
+    setTimeout(function(){
+      document.getElementById('my-alert1').classList.remove('hide');
+    }, 15000); // (tức là 15 giây)
+    setTimeout(function(){ 
+      document.getElementById('my-alert1').classList.add('hide');
+    }, 19000); // (tức là 19 giây)
+    setTimeout(function(){
+      document.getElementById('my-alert2').classList.remove('hide');
+    }, 21000); // (tức là 21 giây)
+    setTimeout(function(){
+      document.getElementById('my-alert2').classList.add('hide');
+    }, 24000); // (tức là 24 giây)
+    setTimeout(function(){
+      document.getElementById('my-alert').classList.remove('hide');
+    }, 50000); // (tức là 50 giây)
+    setTimeout(function(){
+      document.getElementById('my-alert').classList.add('hide');
+    }, 54000); // (tức là 54 giây)
+    setTimeout(function(){
+      document.getElementById('my-alert').classList.remove('hide');
+    }, 120000); // (tức là 120 giây)
+    setTimeout(function(){
+      document.getElementById('my-alert').classList.add('hide');
+    }, 124000); // (tức là 124 giây)
+    setTimeout(function(){
+      document.getElementById('my-alert').classList.remove('hide');
+    }, 240000); // (tức là 240 giây)
+    setTimeout(function(){
+      document.getElementById('my-alert').classList.add('hide');
+    }, 244000); // (tức là 244 giây)
+  </script>
+  <!-- scroll -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init({
